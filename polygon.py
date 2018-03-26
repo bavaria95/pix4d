@@ -45,4 +45,23 @@ class Polygon:
         '''
             In-place sorting vertices in counter-clockwise order
         '''
+
         self.vertices = self._sort_vertices_ccw()
+
+    @property
+    def area(self):
+        '''
+            Compute area of a polygon using a shoelace formula
+        '''
+
+        vertices = self._sort_vertices_ccw()
+        n = len(vertices)
+        pol_area = 0.0
+
+        for i in range(n):
+            j = (i + 1) % n
+            pol_area += vertices[i].x * vertices[j].y
+            pol_area -= vertices[j].x * vertices[i].y
+        pol_area = abs(pol_area) / 2.0
+
+        return pol_area
