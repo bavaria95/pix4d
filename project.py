@@ -25,7 +25,7 @@ class Project:
             vertices = [Point(float(p.get('x')), float(p.get('y')))
                         for p in pa_el.getchildren()]
         except AttributeError:
-            return ProcessingArea([])
+            vertices = []
 
         return ProcessingArea(vertices)
 

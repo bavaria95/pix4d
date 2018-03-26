@@ -1,5 +1,5 @@
 class GCPs:
-    def __init__(self, gcps):
+    def __init__(self, gcps=[]):
         self.gcps = gcps
 
     def __len__(self):

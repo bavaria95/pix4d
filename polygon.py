@@ -2,7 +2,7 @@ import math
 from point import Point
 
 class Polygon:
-    def __init__(self, vertices):
+    def __init__(self, vertices=[]):
         self.vertices = vertices
 
     def __len__(self):
@@ -28,6 +28,12 @@ class Polygon:
 
     def __getitem__(self, item):
         return self.vertices[item]
+
+    def __delitem__(self, key):
+        del self.vertices[key]
+
+    def append(self, item):
+        self.vertices.append(item)
 
     @property
     def centroid(self):
