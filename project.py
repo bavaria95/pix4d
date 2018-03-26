@@ -19,12 +19,19 @@ class Project:
         self.gcps = self._read_gcps()
 
     def _read_processing_area(self):
-        pa_el = self.root.find('./inputs/processingArea')
-        vertices = [Point(float(p.get('x')), float(p.get('y')))
-                    for p in pa_el.getchildren()]
+        try:
+            pa_el = self.root.find('./inputs/processingArea')
+            vertices = [Point(float(p.get('x')), float(p.get('y')))
+                        for p in pa_el.getchildren()]
+        except AttributeError:
+            return ProcessingArea([])
+
         return ProcessingArea(vertices)
 
     def _read_gcps(self):
-        gcps_el = self.root.find('./inputs/gcps')
-        return [GCP(float(p.get('x')), float(p.get('y')), p.get('label'))
-                for p in gcps_el.getchildren()]
+        try:
+            gcps_el = self.root.find('./inputs/gcps')
+            return [GCP(float(p.get('x')), float(p.get('y')), p.get('label'))
+                 for p in gcps_el.getchildren()]
+        except AttributeError:
+            return []
