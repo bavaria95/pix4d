@@ -30,16 +30,13 @@ class Polygon:
         return self.vertices[item]
 
     @property
-    def cx(self):
-        return float(sum(v.x for v in self.vertices)) / len(self.vertices)
-
-    @property
-    def cy(self):
-        return float(sum(v.y for v in self.vertices)) / len(self.vertices)
+    def centroid(self):
+        cx = float(sum(v.x for v in self.vertices)) / len(self.vertices)
+        cy = float(sum(v.y for v in self.vertices)) / len(self.vertices)
+        return Point(cx, cy)
 
     def _sort_vertices_ccw(self):
-        centroid = Point(self.cx, self.cy)
-        return sorted(self.vertices, key=lambda v: v.angle(centroid))
+        return sorted(self.vertices, key=lambda v: v.angle(self.centroid))
 
     def sort(self):
         '''
