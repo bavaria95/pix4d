@@ -28,3 +28,21 @@ class Polygon:
 
     def __getitem__(self, item):
         return self.vertices[item]
+
+    @property
+    def cx(self):
+        return float(sum(v.x for v in self.vertices)) / len(self.vertices)
+
+    @property
+    def cy(self):
+        return float(sum(v.y for v in self.vertices)) / len(self.vertices)
+
+    def _sort_vertices_ccw(self):
+        centroid = Point(self.cx, self.cy)
+        return sorted(self.vertices, key=lambda v: v.angle(centroid))
+
+    def sort(self):
+        '''
+            In-place sorting vertices in counter-clockwise order
+        '''
+        self.vertices = self._sort_vertices_ccw()
