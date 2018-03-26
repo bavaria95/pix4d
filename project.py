@@ -32,8 +32,10 @@ class Project:
     def _read_gcps(self):
         try:
             gcps_el = self.root.find('./inputs/gcps')
-             gcps_points = [GCP(float(p.get('x')), float(p.get('y')), p.get('label'))
-                 for p in gcps_el.getchildren()]
+            gcps_points = [GCP(float(p.get('x')), float(p.get('y')), p.get('label'))
+                           for p in gcps_el.getchildren()]
         except AttributeError:
             gcps_points = []
-        gcps = GCPs(gcps_points)
+
+        return GCPs(gcps_points)
+
