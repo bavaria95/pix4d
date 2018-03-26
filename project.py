@@ -1,6 +1,7 @@
 import xml.etree.ElementTree as ET
 from point import Point
 from gcp import GCP
+from gcps import GCPs
 from processing_area import ProcessingArea
 
 class Project:
@@ -31,7 +32,8 @@ class Project:
     def _read_gcps(self):
         try:
             gcps_el = self.root.find('./inputs/gcps')
-            return [GCP(float(p.get('x')), float(p.get('y')), p.get('label'))
+             gcps_points = [GCP(float(p.get('x')), float(p.get('y')), p.get('label'))
                  for p in gcps_el.getchildren()]
         except AttributeError:
-            return []
+            gcps_points = []
+        gcps = GCPs(gcps_points)
