@@ -38,4 +38,3 @@ class Project:
             gcps_points = []
 
         return GCPs(gcps_points)
-

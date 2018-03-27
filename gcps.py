@@ -1,4 +1,5 @@
 from gcp import GCP
+from polygon import Polygon
 import functools
 
 epsilon = 10e-8
@@ -79,4 +80,15 @@ class GCPs:
                 return -orientation
 
         points = sorted(points, key=functools.cmp_to_key(comparator))
-        return functools.reduce(GCPs._keep_left, points, [])
+        return list(functools.reduce(GCPs._keep_left, points, []))
+
+    def polygon(self):
+        '''
+            Create polygon out of convex hull of GCPs for the approximate
+            area covered by GCPs
+        '''
+
+        hull = self.convex_hull()
+
+        return Polygon(hull)
+
