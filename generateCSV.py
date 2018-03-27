@@ -1,6 +1,8 @@
-from project import Project
 import csv
 import click
+
+from project import Project
+
 
 def write_data_to_csv(csv_filename, data):
     with open(csv_filename, 'w') as f:
@@ -13,9 +15,12 @@ def validate_option(ctx, param, value):
         raise click.BadParameter('You need to provide "%s" option' % param.name)
     return value
 
+
 @click.command()
-@click.option('--project', callback=validate_option, help='Name of the project to parse')
-@click.option('--output', callback=validate_option, help='Name of the output CSV file')
+@click.option('--project', callback=validate_option,
+              help='Name of the project to parse')
+@click.option('--output', callback=validate_option,
+              help='Name of the output CSV file')
 def main(project, output):
     p = Project()
     p.read_data_from_xml(project)

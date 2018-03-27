@@ -1,8 +1,10 @@
 import xml.etree.ElementTree as ET
+
 from point import Point
 from gcp import GCP
 from gcps import GCPs
 from processing_area import ProcessingArea
+
 
 class Project:
     def __init__(self):

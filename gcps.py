@@ -1,9 +1,11 @@
+import functools
+
 from gcp import GCP
 from polygon import Polygon
-import functools
 
 epsilon = 10e-8
 COUNTER_CLOCKWISE, CLOCKWISE, COLINEAR = (1, -1, 0)
+
 
 class GCPs:
     def __init__(self, gcps=[]):
@@ -91,4 +93,3 @@ class GCPs:
         hull = self.convex_hull()
 
         return Polygon(hull)
-

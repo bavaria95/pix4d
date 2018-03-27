@@ -1,5 +1,7 @@
 import math
+
 from point import Point
+
 
 class Polygon:
     def __init__(self, vertices=[]):
