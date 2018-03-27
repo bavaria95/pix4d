@@ -20,10 +20,13 @@ class Project:
         self.gcps = self._read_gcps()
 
     def _read_processing_area(self):
+        allowed_processing_area_types = set(('geoCoord2D', 'geoCoord3D'))
         try:
             pa_el = self.root.find('./inputs/processingArea')
-            vertices = [Point(float(p.get('x')), float(p.get('y')))
-                        for p in pa_el.getchildren()]
+            vertices = []
+            for p in pa_el.getchildren():
+                if p.tag in allowed_processing_area_types:
+                    vertices.append(Point(float(p.get('x')), float(p.get('y'))))
         except AttributeError:
             vertices = []
 
