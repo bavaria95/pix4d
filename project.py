@@ -43,3 +43,45 @@ class Project:
             gcps_points = []
 
         return GCPs(gcps_points)
+
+    def draw(self):
+        '''
+            Drawing very primitive doodle of the project
+        '''
+
+        import numpy as np
+        import matplotlib.pyplot as plt
+        import matplotlib.patches
+        from matplotlib.collections import PatchCollection
+
+        fig, ax = plt.subplots()
+
+        # plotting dots for processing area points
+        plt.plot([v.x for v in self.processing_area],
+                  [v.y for v in self.processing_area],
+                  'bo')
+
+        # creating polygon for processing area
+        pa_array = [(v.x, v.y) for v in self.processing_area]
+        pa_polygon = matplotlib.patches.Polygon(pa_array)
+
+        # plotting points for GCPs
+        plt.plot([p.x for p in self.gcps],
+                  [p.y for p in self.gcps],
+                  'rx')
+
+        # computing convex hull and creating polygon for it
+        convex_hull = self.gcps.convex_hull()
+        ch_array = [(p.x, p.y) for p in convex_hull]
+        ch_polygon = matplotlib.patches.Polygon(ch_array)
+
+
+        patches = [pa_polygon, ch_polygon]
+        p = PatchCollection(patches, cmap=matplotlib.cm.jet, alpha=0.4)
+
+        colors = 100*np.random.rand(len(patches))
+        p.set_array(np.array(colors))
+
+        ax.add_collection(p)
+
+        plt.show()

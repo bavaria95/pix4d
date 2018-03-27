@@ -13,3 +13,5 @@ Project is written in Python 3, thus way to start it would be:
 ```
   python3 generateCSV.py --project project.p4d --output somefile.csv
 ```
+
+Also I added a simple method to draw a sketch of a project. It uses pyplot to draw a polygon of Processing Area (including points themselves as blue circles), GCPs (as red crosses) and polygon created from convex hull of GCPs.
