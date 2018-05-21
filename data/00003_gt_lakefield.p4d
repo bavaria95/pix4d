@@ -1,0 +1,1087 @@
+<?xml version="1.0"?>
+<pix4dmapper>
+	<software>
+		<projectVersion>3.0.17</projectVersion>
+		<p4dVersion>9</p4dVersion>
+		<cameraModelVersion>19</cameraModelVersion>
+	</software>
+	<options>
+		<initial>
+			<runStep>true</runStep>
+			<!--    General    -->
+			<!--Keypoints Image Scale-->
+			<keypointsImageScale>Full</keypointsImageScale>
+			<imageScale>1</imageScale>
+			<!--Quality report-->
+			<generateOrthoInReport>true</generateOrthoInReport>
+			<!--    Matching    -->
+			<!--Matching Image Pairs-->
+			<matchStrategy>AutoAerial</matchStrategy>
+			<matchTimeNbNeighbours>2</matchTimeNbNeighbours>
+			<matchUseTriangulation>true</matchUseTriangulation>
+			<matchRelativeDistanceImages>0</matchRelativeDistanceImages>
+			<matchMtpMaxImagePair>5</matchMtpMaxImagePair>
+			<matchImageSimilarityMaxPairs>1</matchImageSimilarityMaxPairs>
+			<matchTimeMultiCamera>0</matchTimeMultiCamera>
+			<!--Matching Strategy-->
+			<geometricallyVerifiedMatching>false</geometricallyVerifiedMatching>
+			<!--    Calibration    -->
+			<!--Targeted number of keypoints-->
+			<keypointSelectionMethod>Automatic</keypointSelectionMethod>
+			<numberOfKeypoints>10000</numberOfKeypoints>
+			<!--Method-->
+			<calibrationMethod>Standard</calibrationMethod>
+			<!--Optimizer-->
+			<optimizerType>Classic</optimizerType>
+			<!--Camera optimization-->
+			<internalParamOptimization>All</internalParamOptimization>
+			<externalParamOptimization>All</externalParamOptimization>
+			<!--Rematch-->
+			<rematchStrategy>Auto</rematchStrategy>
+			<rematch>true</rematch>
+			<rematchOverlap>0.3000000119</rematchOverlap>
+			<!--SkySegmentation-->
+			<automaticSkyMasking>true</automaticSkyMasking>
+			<!--Export-->
+			<exportCameraParamsAATBBA>true</exportCameraParamsAATBBA>
+			<exportUndistortedImages>false</exportUndistortedImages>
+			<!--    Miscellaneous options    -->
+			<matchAll>false</matchAll>
+			<targetCameraDist>0</targetCameraDist>
+			<descriptorType>0</descriptorType>
+			<minImageDist>15.6186547508</minImageDist>
+			<rigMatch>true</rigMatch>
+			<saveKMLReport>false</saveKMLReport>
+			<createThumbnails>true</createThumbnails>
+			<threshAdd>20</threshAdd>
+			<threshHom>10</threshHom>
+		</initial>
+		<dense>
+			<runStep>true</runStep>
+			<!--    Point Cloud    -->
+			<!--Densification-->
+			<pclImageDownscaleFactor>1</pclImageDownscaleFactor>
+			<pclImageMultiscale>true</pclImageMultiscale>
+			<pclDensity>Optimal</pclDensity>
+			<pclMinNoMatches>3</pclMinNoMatches>
+			<!--Export-->
+			<pclExportLAS>true</pclExportLAS>
+			<pclExportLAZ>false</pclExportLAZ>
+			<pclExportPLY>false</pclExportPLY>
+			<pclExportXYZ>false</pclExportXYZ>
+			<pclExportXYZDelim>Space</pclExportXYZDelim>
+			<pclExportMergeTiles>false</pclExportMergeTiles>
+			<!--    3D Textured Mesh    -->
+			<!--Generation-->
+			<meshGenerate3dTexturedMesh>true</meshGenerate3dTexturedMesh>
+			<!--Settings-->
+			<meshResolution>Medium</meshResolution>
+			<meshMaxOctreeDepth>12</meshMaxOctreeDepth>
+			<meshTextureSize>8192</meshTextureSize>
+			<meshDecimationCriteria>Quantitative</meshDecimationCriteria>
+			<meshMaxTriangles>1000000</meshMaxTriangles>
+			<meshDecimationStrategy>Sensitive</meshDecimationStrategy>
+			<meshTextureColorBalancing>false</meshTextureColorBalancing>
+			<!--Export-->
+			<meshExportPLY>false</meshExportPLY>
+			<meshExportFBX>true</meshExportFBX>
+			<meshExportDXF>false</meshExportDXF>
+			<meshExportOSGB>false</meshExportOSGB>
+			<meshExportOBJ>true</meshExportOBJ>
+			<meshExportTiledOBJ>false</meshExportTiledOBJ>
+			<meshExportPDF3D>false</meshExportPDF3D>
+			<meshExportPDF3DLogoPath></meshExportPDF3DLogoPath>
+			<!--    Advanced    -->
+			<!--Densification-->
+			<pclWindowSize>7</pclWindowSize>
+			<!--Image groups-->
+			<pclImageGroups>
+				<group name=""/>
+			</pclImageGroups>
+			<meshGeometryImageGroups>
+				<group name=""/>
+			</meshGeometryImageGroups>
+			<meshTextureImageGroups>
+				<group name=""/>
+			</meshTextureImageGroups>
+			<!--Point cloud Filters-->
+			<pclUseProcessingArea>true</pclUseProcessingArea>
+			<pclUseAnnotations>true</pclUseAnnotations>
+			<pclLimitDepthAutomatically>false</pclLimitDepthAutomatically>
+			<!--Point cloud classification-->
+			<pclTerrainClassf>false</pclTerrainClassf>
+			<pclTerrainClassfMinLength>0.1</pclTerrainClassfMinLength>
+			<pclTerrainClassfMaxLength>400</pclTerrainClassfMaxLength>
+			<pclTerrainClassfMinHeight>0.1</pclTerrainClassfMinHeight>
+			<!--Mesh generation-->
+			<meshSampleDensityDivider>1</meshSampleDensityDivider>
+			<!--    ADD-ON options   -->
+			<addOnUseSGM>false</addOnUseSGM>
+			<addOnSGMOptimizeForDSM>true</addOnSGMOptimizeForDSM>
+			<addOnSGMOverlapForward>-1</addOnSGMOverlapForward>
+			<addOnSGMOverlapSideward>-1</addOnSGMOverlapSideward>
+		</dense>
+		<ortho>
+			<runStep>true</runStep>
+			<!--    DSM and Orthomosaic   -->
+			<!--Resolution-->
+			<orthoResolution>-1</orthoResolution>
+			<!--DSM Filters-->
+			<dsmFilterUseNoiseFilter>true</dsmFilterUseNoiseFilter>
+			<dsmFilterUseSmoothing>true</dsmFilterUseSmoothing>
+			<dsmFilterSmoothingType>Sharp</dsmFilterSmoothingType>
+			<!--Raster DSM-->
+			<dsmTIFF>true</dsmTIFF>
+			<dsmMethod>InverseDistanceWeighting</dsmMethod>
+			<dsmTIFFMergeTiles>true</dsmTIFFMergeTiles>
+			<!--Orthomosaic-->
+			<mosaicTIFF>true</mosaicTIFF>
+			<mosaicTIFFMergeTiles>true</mosaicTIFFMergeTiles>
+			<mosaicTIFFNoTransparency>false</mosaicTIFFNoTransparency>
+			<mosaicKML>false</mosaicKML>
+			<!--    Additional outputs    -->
+			<!--Grid DSM-->
+			<gridDsmXYZ>false</gridDsmXYZ>
+			<gridDsmXYZDelim>Space</gridDsmXYZDelim>
+			<gridDsmLAS>false</gridDsmLAS>
+			<gridDsmLAZ>false</gridDsmLAZ>
+			<gridDsmGridSpacing>100</gridDsmGridSpacing>
+			<!--Contour lines-->
+			<contourSHP>false</contourSHP>
+			<contourPDF>false</contourPDF>
+			<contourDXF>false</contourDXF>
+			<contourBase>0</contourBase>
+			<contourElevationInterval>10</contourElevationInterval>
+			<contourResolution>100</contourResolution>
+			<contourMinLineSize>20</contourMinLineSize>
+			<!--    Miscellaneous options    -->
+			<meanResolution>4.0500427447</meanResolution>
+			<mosaicVisib>true</mosaicVisib>
+			<mosaicGainc>true</mosaicGainc>
+			<dsmPNG>false</dsmPNG>
+		</ortho>
+		<index>
+			<!--Resolution-->
+			<indexResolution>-1</indexResolution>
+			<indexDownsamplingMethod>Gauss</indexDownsamplingMethod>
+			<!--Reflectance Map-->
+			<indexReflectance>false</indexReflectance>
+			<indexReflectanceMergeTiles>false</indexReflectanceMergeTiles>
+			<indices>
+				<index name="red" formula="red" enabled="false"/>
+				<index name="green" formula="green" enabled="false"/>
+				<index name="blue" formula="blue" enabled="false"/>
+				<index name="grayscale" formula="0.2126 * red + 0.7152 * green + 0.0722 * blue" enabled="false"/>
+			</indices>
+			<!--Export-->
+			<indexExportPointSHP>false</indexExportPointSHP>
+			<indexExportPointSHPGridSize>200</indexExportPointSHPGridSize>
+			<indexExportPolygonSHP>false</indexExportPolygonSHP>
+			<indexExportPolygonSHPGridSize>400</indexExportPolygonSHPGridSize>
+		</index>
+	</options>
+	<inputs>
+		<cameras>
+			<camera name="CanonIXUS125HS_4.3_4608x3456">
+				<imageWidth>4608</imageWidth>
+				<imageHeight>3456</imageHeight>
+				<pixelSize>1.33945</pixelSize>
+				<principalPointXmm>3.086086</principalPointXmm>
+				<principalPointYmm>2.314569</principalPointYmm>
+				<lensType>perspective</lensType>
+				<focalLengthmm>4.38645</focalLengthmm>
+				<distortion>5</distortion>
+				<radialK1>-0.0480902</radialK1>
+				<radialK2>0.0451447</radialK2>
+				<radialK3>-0.0163033</radialK3>
+				<tangentialT1>-0.00273262</tangentialT1>
+				<tangentialT2>0.00826045</tangentialT2>
+				<cameraModelSource>internalDB</cameraModelSource>
+				<band name="Red" centralWaveLength="660" width="0" weight="0.2126"/>
+				<band name="Green" centralWaveLength="550" width="0" weight="0.7152"/>
+				<band name="Blue" centralWaveLength="470" width="0" weight="0.0722"/>
+				<serialNumber></serialNumber>
+				<fixedBands>false</fixedBands>
+				<id>0</id>
+				<radiometricNormalization>none</radiometricNormalization>
+			</camera>
+		</cameras>
+		<coordinateSystems>
+			<southingWesting>true</southingWesting>
+			<output>
+				<WKT>PROJCS[&quot;CH1903+ / LV95&quot;,GEOGCS[&quot;CH1903+&quot;,DATUM[&quot;CH1903+&quot;,SPHEROID[&quot;Bessel 1841&quot;,6377397.155,299.1528128,AUTHORITY[&quot;EPSG&quot;,&quot;7004&quot;]],TOWGS84[674.374,15.056,405.346,0,0,0,0],AUTHORITY[&quot;EPSG&quot;,&quot;6150&quot;]],PRIMEM[&quot;Greenwich&quot;,0,AUTHORITY[&quot;EPSG&quot;,&quot;8901&quot;]],UNIT[&quot;degree&quot;,0.0174532925199433,AUTHORITY[&quot;EPSG&quot;,&quot;9122&quot;]],AUTHORITY[&quot;EPSG&quot;,&quot;4150&quot;]],PROJECTION[&quot;Hotine_Oblique_Mercator&quot;],PARAMETER[&quot;latitude_of_center&quot;,46.95240555555556],PARAMETER[&quot;longitude_of_center&quot;,7.439583333333333],PARAMETER[&quot;azimuth&quot;,90],PARAMETER[&quot;rectified_grid_angle&quot;,90],PARAMETER[&quot;scale_factor&quot;,1],PARAMETER[&quot;false_easting&quot;,2600000],PARAMETER[&quot;false_northing&quot;,1200000],UNIT[&quot;metre&quot;,1,AUTHORITY[&quot;EPSG&quot;,&quot;9001&quot;]],AXIS[&quot;Y&quot;,EAST],AXIS[&quot;X&quot;,NORTH],AUTHORITY[&quot;EPSG&quot;,&quot;2056&quot;]]</WKT>
+				<verticalDef model="constShift" geoidHeight="0"/>
+			</output>
+			<gcp>
+				<WKT>PROJCS[&quot;CH1903+ / LV95&quot;,GEOGCS[&quot;CH1903+&quot;,DATUM[&quot;CH1903+&quot;,SPHEROID[&quot;Bessel 1841&quot;,6377397.155,299.1528128,AUTHORITY[&quot;EPSG&quot;,&quot;7004&quot;]],TOWGS84[674.374,15.056,405.346,0,0,0,0],AUTHORITY[&quot;EPSG&quot;,&quot;6150&quot;]],PRIMEM[&quot;Greenwich&quot;,0,AUTHORITY[&quot;EPSG&quot;,&quot;8901&quot;]],UNIT[&quot;degree&quot;,0.0174532925199433,AUTHORITY[&quot;EPSG&quot;,&quot;9122&quot;]],AUTHORITY[&quot;EPSG&quot;,&quot;4150&quot;]],PROJECTION[&quot;Hotine_Oblique_Mercator&quot;],PARAMETER[&quot;latitude_of_center&quot;,46.95240555555556],PARAMETER[&quot;longitude_of_center&quot;,7.439583333333333],PARAMETER[&quot;azimuth&quot;,90],PARAMETER[&quot;rectified_grid_angle&quot;,90],PARAMETER[&quot;scale_factor&quot;,1],PARAMETER[&quot;false_easting&quot;,2600000],PARAMETER[&quot;false_northing&quot;,1200000],UNIT[&quot;metre&quot;,1,AUTHORITY[&quot;EPSG&quot;,&quot;9001&quot;]],AXIS[&quot;Y&quot;,EAST],AXIS[&quot;X&quot;,NORTH],AUTHORITY[&quot;EPSG&quot;,&quot;2056&quot;]]</WKT>
+				<verticalDef model="constShift" geoidHeight="0"/>
+			</gcp>
+			<image>
+				<WKT>GEOGCS[&quot;WGS 84&quot;,DATUM[&quot;WGS_1984&quot;,SPHEROID[&quot;WGS 84&quot;,6378137,298.257223563,AUTHORITY[&quot;EPSG&quot;,&quot;7030&quot;]],TOWGS84[0,0,0,0,0,0,0],AUTHORITY[&quot;EPSG&quot;,&quot;6326&quot;]],PRIMEM[&quot;Greenwich&quot;,0,AUTHORITY[&quot;EPSG&quot;,&quot;8901&quot;]],UNIT[&quot;degree&quot;,0.01745329251994328,AUTHORITY[&quot;EPSG&quot;,&quot;9122&quot;]],AUTHORITY[&quot;EPSG&quot;,&quot;4326&quot;]]</WKT>
+				<verticalDef model="constShift" geoidHeight="0"/>
+			</image>
+		</coordinateSystems>
+		<gcps>
+			<GCP label="GCP11" alt="620.4431" lat="46.3044742794" lng="7.6751691639" x="2618222.5550000002" y="1128145.8552000001" z="620.4431" tiePoint3D="false" id="0" accuracyXY="0.02" accuracyZ="0.02" type="3DGCP"/>
+			<GCP label="GCP12" alt="620.7604" lat="46.3035786262" lng="7.674961025" x="2618206.8184000002" y="1128046.2420000001" z="620.7604" tiePoint3D="false" id="1" accuracyXY="0.02" accuracyZ="0.02" type="3DGCP"/>
+			<GCP label="GCP13" alt="619.9662" lat="46.3031308236" lng="7.6738844275" x="2618124.0221000002" y="1127996.2137" z="619.9662" tiePoint3D="false" id="2" accuracyXY="0.02" accuracyZ="0.02" type="3DGCP"/>
+			<GCP label="GCP14" alt="619.8934" lat="46.3036650626" lng="7.6728231131" x="2618042.0770999999" y="1128055.3584" z="619.8934" tiePoint3D="false" id="3" accuracyXY="0.02" accuracyZ="0.02" type="3DGCP"/>
+			<GCP label="GCP15" alt="619.3364" lat="46.3042822013" lng="7.6726605138" x="2618029.3459000001" y="1128123.9251999999" z="619.3364" tiePoint3D="false" id="4" accuracyXY="0.02" accuracyZ="0.02" type="3DGCP"/>
+			<GCP label="GCP16" alt="619.7927" lat="46.304246046" lng="7.6716704492" x="2617953.0805000002" y="1128119.6797" z="619.7927" tiePoint3D="false" id="5" accuracyXY="0.02" accuracyZ="0.02" type="3DGCP"/>
+			<GCP label="GCP17" alt="627.8267" lat="46.3039270012" lng="7.6722900167" x="2618000.9188999999" y="1128084.3544999999" z="627.8267" tiePoint3D="false" id="6" accuracyXY="0.02" accuracyZ="0.02" type="3DGCP"/>
+			<GCP label="GCP18" alt="627.7652" lat="46.3039119959" lng="7.6732162826" x="2618072.2864000001" y="1128082.8987" z="627.7652" tiePoint3D="false" id="7" accuracyXY="0.02" accuracyZ="0.02" type="3DGCP"/>
+			<GCP label="GCP19" alt="620.0812" lat="46.3042446238" lng="7.6737594393" x="2618114.0225999998" y="1128120.0001999999" z="620.0812" tiePoint3D="false" id="8" accuracyXY="0.02" accuracyZ="0.02" type="3DGCP"/>
+		</gcps>
+		<images>
+			<image path="images/IMG_1683.JPG" group="RGB" enabled="true">
+				<camera name="CanonIXUS125HS_4.3_4608x3456" id="0"/>
+				<time>2013:08:16 09:48:55</time>
+				<gps alt="807.91418457029999445" lat="46.30266470000000112" lng="7.67119709999999966"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="images/IMG_1684.JPG" group="RGB" enabled="true">
+				<camera name="CanonIXUS125HS_4.3_4608x3456" id="0"/>
+				<time>2013:08:16 09:49:00</time>
+				<gps alt="807.48425292970000555" lat="46.30279360000000111" lng="7.67201320000000031"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="images/IMG_1685.JPG" group="RGB" enabled="true">
+				<camera name="CanonIXUS125HS_4.3_4608x3456" id="0"/>
+				<time>2013:08:16 09:49:05</time>
+				<gps alt="803.53216552729998057" lat="46.30287440000000032" lng="7.67274999999999974"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="images/IMG_1686.JPG" group="RGB" enabled="true">
+				<camera name="CanonIXUS125HS_4.3_4608x3456" id="0"/>
+				<time>2013:08:16 09:49:11</time>
+				<gps alt="805.9265136719000111" lat="46.30295799999999673" lng="7.67353919999999956"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<imageGCP x="1826.3505154639" y="1272.4329896907" id="2" scale="1"/>
+			</image>
+			<image path="images/IMG_1687.JPG" group="RGB" enabled="true">
+				<camera name="CanonIXUS125HS_4.3_4608x3456" id="0"/>
+				<time>2013:08:16 09:49:17</time>
+				<gps alt="805.65625" lat="46.30303609999999992" lng="7.67435259999999975"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<imageGCP x="968.4742268041" y="1002.9896907217" id="1" scale="1"/>
+				<imageGCP x="1699.1443298969" y="3252.5257731959" id="2" scale="1"/>
+			</image>
+			<image path="images/IMG_1688.JPG" group="RGB" enabled="true">
+				<camera name="CanonIXUS125HS_4.3_4608x3456" id="0"/>
+				<time>2013:08:16 09:49:23</time>
+				<gps alt="806.86614990229998057" lat="46.30312889999999726" lng="7.67512650000000018"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="images/IMG_1689.JPG" group="RGB" enabled="true">
+				<camera name="CanonIXUS125HS_4.3_4608x3456" id="0"/>
+				<time>2013:08:16 09:49:29</time>
+				<gps alt="807.28845214839998334" lat="46.30323909999999898" lng="7.67593899999999962"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="images/IMG_1690.JPG" group="RGB" enabled="true">
+				<camera name="CanonIXUS125HS_4.3_4608x3456" id="0"/>
+				<time>2013:08:16 09:49:40</time>
+				<gps alt="805.79290771479998057" lat="46.30348740000000163" lng="7.67567049999999984"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<imageGCP x="2562.4948453608" y="374.4742268041" id="1" scale="1"/>
+			</image>
+			<image path="images/IMG_1691.JPG" group="RGB" enabled="true">
+				<camera name="CanonIXUS125HS_4.3_4608x3456" id="0"/>
+				<time>2013:08:16 09:49:45</time>
+				<gps alt="806.94451904300001388" lat="46.3034403999999995" lng="7.67488469999999978"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<imageGCP x="2399.4742268041" y="2505.4329896907" id="1" scale="1"/>
+				<imageGCP x="2129.9381443299" y="249.7731958763" id="2" scale="1"/>
+			</image>
+			<image path="images/IMG_1692.JPG" group="RGB" enabled="true">
+				<camera name="CanonIXUS125HS_4.3_4608x3456" id="0"/>
+				<time>2013:08:16 09:49:50</time>
+				<gps alt="807.34387207029999445" lat="46.30332229999999782" lng="7.67405589999999993"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<imageGCP x="1846.2989690722" y="1874.7835051546" id="2" scale="1"/>
+				<imageGCP x="4092.5445778906" y="743.6362009598" id="7" scale="1"/>
+			</image>
+			<image path="images/IMG_1693.JPG" group="RGB" enabled="true">
+				<camera name="CanonIXUS125HS_4.3_4608x3456" id="0"/>
+				<time>2013:08:16 09:49:54</time>
+				<gps alt="806.22943115229998057" lat="46.30325409999999664" lng="7.6732364000000004"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<imageGCP x="3333.1546391753" y="1965.8969072165" id="3" scale="1"/>
+				<imageGCP x="4284.7422680412" y="1230.3092783505" id="6" scale="1"/>
+				<imageGCP x="3898.6237113402" y="2923.0051546392" id="7" scale="1"/>
+			</image>
+			<image path="images/IMG_1694.JPG" group="RGB" enabled="true">
+				<camera name="CanonIXUS125HS_4.3_4608x3456" id="0"/>
+				<time>2013:08:16 09:50:00</time>
+				<gps alt="805.46154785160001666" lat="46.30316289999999668" lng="7.67237770000000019"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<imageGCP x="3472.8865979381" y="3183.7731958763" id="3" scale="1"/>
+				<imageGCP x="4341.9896907216" y="2203.5154639175" id="6" scale="1"/>
+			</image>
+			<image path="images/IMG_1695.JPG" group="RGB" enabled="true">
+				<camera name="CanonIXUS125HS_4.3_4608x3456" id="0"/>
+				<time>2013:08:16 09:50:05</time>
+				<gps alt="808.82342529300001388" lat="46.30305899999999752" lng="7.67157640000000018"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="images/IMG_1696.JPG" group="RGB" enabled="true">
+				<camera name="CanonIXUS125HS_4.3_4608x3456" id="0"/>
+				<time>2013:08:16 09:50:10</time>
+				<gps alt="807.6213378905999889" lat="46.30298539999999718" lng="7.67072359999999964"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="images/IMG_1697.JPG" group="RGB" enabled="true">
+				<camera name="CanonIXUS125HS_4.3_4608x3456" id="0"/>
+				<time>2013:08:16 09:50:19</time>
+				<gps alt="805.61077880860000278" lat="46.30334380000000039" lng="7.67112309999999997"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="images/IMG_1698.JPG" group="RGB" enabled="true">
+				<camera name="CanonIXUS125HS_4.3_4608x3456" id="0"/>
+				<time>2013:08:16 09:50:24</time>
+				<gps alt="804.69445800779999445" lat="46.30341820000000297" lng="7.67191009999999984"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<imageGCP x="2284.4226804124" y="18" id="3" scale="1"/>
+				<imageGCP x="306.7422680412" y="1718.9072164948" id="5" scale="1"/>
+				<imageGCP x="1298.0412371134" y="751.7319587629" id="6" scale="1"/>
+			</image>
+			<image path="images/IMG_1699.JPG" group="RGB" enabled="true">
+				<camera name="CanonIXUS125HS_4.3_4608x3456" id="0"/>
+				<time>2013:08:16 09:50:30</time>
+				<gps alt="803.91522216800001388" lat="46.30354990000000015" lng="7.6726738000000001"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<imageGCP x="2250.1855670103" y="1535.6597938144" id="3" scale="1"/>
+				<imageGCP x="634.6391752577" y="1230.1237113402" id="4" scale="1"/>
+				<imageGCP x="16.3298969072" y="2956.4536082474" id="5" scale="1"/>
+				<imageGCP x="1131.6804123711" y="2228.2422680412" id="6" scale="1"/>
+				<imageGCP x="1872.5567010309" y="539.0721649485" id="7" scale="1"/>
+			</image>
+			<image path="images/IMG_1700.JPG" group="RGB" enabled="true">
+				<camera name="CanonIXUS125HS_4.3_4608x3456" id="0"/>
+				<time>2013:08:16 09:50:36</time>
+				<gps alt="805.00054931639999722" lat="46.30360499999999746" lng="7.67343080000000022"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<imageGCP x="3150" y="1870.7010309278" id="2" scale="1"/>
+				<imageGCP x="639.6767191127" y="2452.8788014641" id="7" scale="1"/>
+			</image>
+			<image path="images/IMG_1701.JPG" group="RGB" enabled="true">
+				<camera name="CanonIXUS125HS_4.3_4608x3456" id="0"/>
+				<time>2013:08:16 09:50:42</time>
+				<gps alt="808.69207763669999167" lat="46.30371110000000101" lng="7.67423370000000027"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<imageGCP x="2267.6288659794" y="1132.6082474227" id="1" scale="1"/>
+				<imageGCP x="3282.2164948454" y="3195.2783505155" id="2" scale="1"/>
+			</image>
+			<image path="images/IMG_1702.JPG" group="RGB" enabled="true">
+				<camera name="CanonIXUS125HS_4.3_4608x3456" id="0"/>
+				<time>2013:08:16 09:50:48</time>
+				<gps alt="804.22259521479998057" lat="46.30378009999999733" lng="7.67502510000000004"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<imageGCP x="134.9072164948" y="1806.3092783505" id="0" scale="1"/>
+				<imageGCP x="2650.9175257732" y="2255.6597938144" id="1" scale="1"/>
+			</image>
+			<image path="images/IMG_1703.JPG" group="RGB" enabled="true">
+				<camera name="CanonIXUS125HS_4.3_4608x3456" id="0"/>
+				<time>2013:08:16 09:50:54</time>
+				<gps alt="803.94226074220000555" lat="46.30386959999999874" lng="7.67579109999999964"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<imageGCP x="76.4536082474" y="2827.2989690722" id="0" scale="1"/>
+			</image>
+			<image path="images/IMG_1704.JPG" group="RGB" enabled="true">
+				<camera name="CanonIXUS125HS_4.3_4608x3456" id="0"/>
+				<time>2013:08:16 09:51:05</time>
+				<gps alt="802.23858642580000833" lat="46.30415620000000132" lng="7.6754604999999998"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<imageGCP x="3181.3608247423" y="1646.7216494845" id="0" scale="1"/>
+				<imageGCP x="900.5567010309" y="514.3917525773" id="1" scale="1"/>
+			</image>
+			<image path="images/IMG_1705.JPG" group="RGB" enabled="true">
+				<camera name="CanonIXUS125HS_4.3_4608x3456" id="0"/>
+				<time>2013:08:16 09:51:10</time>
+				<gps alt="802.95739746089998334" lat="46.30408719999999789" lng="7.67461449999999967"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<imageGCP x="718.8865979381" y="2755.1134020619" id="1" scale="1"/>
+				<imageGCP x="2821.9175257732" y="683.6288659794" id="8" scale="1"/>
+			</image>
+			<image path="images/IMG_1706.JPG" group="RGB" enabled="true">
+				<camera name="CanonIXUS125HS_4.3_4608x3456" id="0"/>
+				<time>2013:08:16 09:51:15</time>
+				<gps alt="804.11322021479998057" lat="46.30397190000000052" lng="7.67378879999999963"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<imageGCP x="2014.5154639175" y="185.381443299" id="3" scale="1"/>
+				<imageGCP x="3644.9072164949" y="415.6701030928" id="4" scale="1"/>
+				<imageGCP x="2421.0927835051" y="970.1443298969" id="7" scale="1"/>
+				<imageGCP x="2970.3711340206" y="2303.0721649484" id="8" scale="1"/>
+			</image>
+			<image path="images/IMG_1707.JPG" group="RGB" enabled="true">
+				<camera name="CanonIXUS125HS_4.3_4608x3456" id="0"/>
+				<time>2013:08:16 09:51:19</time>
+				<gps alt="805.28436279300001388" lat="46.3039100000000019" lng="7.67296080000000025"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<imageGCP x="1550.7835051546" y="1546.1443298969" id="3" scale="1"/>
+				<imageGCP x="3266.7216494845" y="1595.9690721649" id="4" scale="1"/>
+				<imageGCP x="2480.1030927835" y="642.9896907216" id="6" scale="1"/>
+				<imageGCP x="2055.8969072165" y="2459.8762886598" id="7" scale="1"/>
+			</image>
+			<image path="images/IMG_1708.JPG" group="RGB" enabled="true">
+				<camera name="CanonIXUS125HS_4.3_4608x3456" id="0"/>
+				<time>2013:08:16 09:51:24</time>
+				<gps alt="807.63177490229998057" lat="46.30379700000000298" lng="7.67211330000000036"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<imageGCP x="3334.2680412371" y="1711.5773195876" id="5" scale="1"/>
+				<imageGCP x="2335.7319587629" y="2745.6494845361" id="6" scale="1"/>
+			</image>
+			<image path="images/IMG_1709.JPG" group="RGB" enabled="true">
+				<camera name="CanonIXUS125HS_4.3_4608x3456" id="0"/>
+				<time>2013:08:16 09:51:29</time>
+				<gps alt="805.73449707029999445" lat="46.30368889999999737" lng="7.67132150000000035"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<imageGCP x="3335.1958762887" y="3266.9072164949" id="5" scale="1"/>
+			</image>
+			<image path="images/IMG_1710.JPG" group="RGB" enabled="true">
+				<camera name="CanonIXUS125HS_4.3_4608x3456" id="0"/>
+				<time>2013:08:16 09:51:34</time>
+				<gps alt="805.52496337889999722" lat="46.30364970000000113" lng="7.67048190000000041"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="images/IMG_1711.JPG" group="RGB" enabled="true">
+				<camera name="CanonIXUS125HS_4.3_4608x3456" id="0"/>
+				<time>2013:08:16 09:51:43</time>
+				<gps alt="800.82482910160001666" lat="46.3039828" lng="7.67094119999999968"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<imageGCP x="1218.0618556701" y="387.0927835052" id="5" scale="1"/>
+			</image>
+			<image path="images/IMG_1712.JPG" group="RGB" enabled="true">
+				<camera name="CanonIXUS125HS_4.3_4608x3456" id="0"/>
+				<time>2013:08:16 09:51:49</time>
+				<gps alt="805.63134765619997779" lat="46.30404649999999833" lng="7.67172680000000007"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<imageGCP x="2581.2371134021" y="53.0721649485" id="3" scale="1"/>
+				<imageGCP x="1091.5051546392" y="586.0206185567" id="4" scale="1"/>
+				<imageGCP x="1521.0927835052" y="2331.2783505155" id="5" scale="1"/>
+				<imageGCP x="2144.8762886598" y="966.9896907216" id="6" scale="1"/>
+			</image>
+			<image path="images/IMG_1713.JPG" group="RGB" enabled="true">
+				<camera name="CanonIXUS125HS_4.3_4608x3456" id="0"/>
+				<time>2013:08:16 09:51:55</time>
+				<gps alt="803.48815917970000555" lat="46.30419140000000056" lng="7.67248969999999986"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<imageGCP x="3522.8041237113" y="1918.9484536083" id="3" scale="1"/>
+				<imageGCP x="1868.8453608247" y="1767.5257731959" id="4" scale="1"/>
+				<imageGCP x="2665.8556701031" y="2746.3917525773" id="6" scale="1"/>
+				<imageGCP x="3127.3608247423" y="1009.2989690722" id="7" scale="1"/>
+			</image>
+			<image path="images/IMG_1714.JPG" group="RGB" enabled="true">
+				<camera name="CanonIXUS125HS_4.3_4608x3456" id="0"/>
+				<time>2013:08:16 09:52:02</time>
+				<gps alt="802.73480224610000278" lat="46.30425050000000198" lng="7.67330450000000042"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<imageGCP x="3802.0824742268" y="3217.175257732" id="3" scale="1"/>
+				<imageGCP x="2036.2268041237" y="3410.3505154639" id="4" scale="1"/>
+				<imageGCP x="3215.6907216495" y="2394.0927835051" id="7" scale="1"/>
+				<imageGCP x="2315.9690721649" y="1283.1030927835" id="8" scale="1"/>
+			</image>
+			<image path="images/IMG_1715.JPG" group="RGB" enabled="true">
+				<camera name="CanonIXUS125HS_4.3_4608x3456" id="0"/>
+				<time>2013:08:16 09:52:07</time>
+				<gps alt="802.19024658199998612" lat="46.30434259999999824" lng="7.67409310000000033"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<imageGCP x="2166.3092783505" y="140.0103092784" id="0" scale="1"/>
+				<imageGCP x="2727.4639175258" y="2761.793814433" id="8" scale="1"/>
+			</image>
+			<image path="images/IMG_1716.JPG" group="RGB" enabled="true">
+				<camera name="CanonIXUS125HS_4.3_4608x3456" id="0"/>
+				<time>2013:08:16 09:52:13</time>
+				<gps alt="801.99450683589998334" lat="46.3044335000000018" lng="7.67489739999999987"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<imageGCP x="2096.0257731959" y="1491.7268041237" id="0" scale="1"/>
+				<imageGCP x="4402.206185567" y="2316.3402061856" id="1" scale="1"/>
+			</image>
+			<image path="images/IMG_1717.JPG" group="RGB" enabled="true">
+				<camera name="CanonIXUS125HS_4.3_4608x3456" id="0"/>
+				<time>2013:08:16 09:52:19</time>
+				<gps alt="801.27520751949998612" lat="46.30452019999999891" lng="7.67569859999999959"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<imageGCP x="2293.2371134021" y="3126.8041237113" id="0" scale="1"/>
+			</image>
+			<image path="images/IMG_1718.JPG" group="RGB" enabled="true">
+				<camera name="CanonIXUS125HS_4.3_4608x3456" id="0"/>
+				<time>2013:08:16 09:52:30</time>
+				<gps alt="801.00567626949998612" lat="46.30481780000000214" lng="7.67530819999999991"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<imageGCP x="1128.9896907217" y="1422.7422680412" id="0" scale="1"/>
+			</image>
+			<image path="images/IMG_1719.JPG" group="RGB" enabled="true">
+				<camera name="CanonIXUS125HS_4.3_4608x3456" id="0"/>
+				<time>2013:08:16 09:52:35</time>
+				<gps alt="804.39276123050001388" lat="46.30471759999999648" lng="7.67446919999999988"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<imageGCP x="1350.4639175258" y="3395.2268041237" id="0" scale="1"/>
+				<imageGCP x="1296.3711340206" y="642.4329896907" id="8" scale="1"/>
+			</image>
+			<image path="images/IMG_1720.JPG" group="RGB" enabled="true">
+				<camera name="CanonIXUS125HS_4.3_4608x3456" id="0"/>
+				<time>2013:08:16 09:52:40</time>
+				<gps alt="805.65478515619997779" lat="46.30463900000000166" lng="7.67363730000000022"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<imageGCP x="14.136753537" y="900.4001716289" id="7" scale="1"/>
+				<imageGCP x="895.7319587629" y="2117.3195876289" id="8" scale="1"/>
+			</image>
+			<image path="images/IMG_1721.JPG" group="RGB" enabled="true">
+				<camera name="CanonIXUS125HS_4.3_4608x3456" id="0"/>
+				<time>2013:08:16 09:52:45</time>
+				<gps alt="806.8342285155999889" lat="46.30455640000000272" lng="7.67282140000000012"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<imageGCP x="1683.8350515464" y="1725.587628866" id="4" scale="1"/>
+				<imageGCP x="786.2474226804" y="890.3505154639" id="6" scale="1"/>
+				<imageGCP x="429.0309278351" y="2664.9278350516" id="7" scale="1"/>
+			</image>
+			<image path="images/IMG_1722.JPG" group="RGB" enabled="true">
+				<camera name="CanonIXUS125HS_4.3_4608x3456" id="0"/>
+				<time>2013:08:16 09:52:50</time>
+				<gps alt="805.90850830080000833" lat="46.30444789999999955" lng="7.67198869999999999"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<imageGCP x="1635.2164948454" y="1565.7680412371" id="5" scale="1"/>
+				<imageGCP x="213.7731958763" y="2429.2577319588" id="6" scale="1"/>
+			</image>
+			<image path="images/IMG_1723.JPG" group="RGB" enabled="true">
+				<camera name="CanonIXUS125HS_4.3_4608x3456" id="0"/>
+				<time>2013:08:16 09:52:55</time>
+				<gps alt="804.57305908199998612" lat="46.3043953999999971" lng="7.67115300000000033"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<imageGCP x="1524.2474226804" y="3101.6597938144" id="5" scale="1"/>
+			</image>
+			<image path="images/IMG_1724.JPG" group="RGB" enabled="true">
+				<camera name="CanonIXUS125HS_4.3_4608x3456" id="0"/>
+				<time>2013:08:16 09:53:00</time>
+				<gps alt="803.98126220699998612" lat="46.30425439999999782" lng="7.67035040000000023"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="images/IMG_1725.JPG" group="RGB" enabled="true">
+				<camera name="CanonIXUS125HS_4.3_4608x3456" id="0"/>
+				<time>2013:08:16 09:53:13</time>
+				<gps alt="803.0344238280999889" lat="46.30435920000000038" lng="7.67077679999999962"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<imageGCP x="915.587628866" y="860.4742268041" id="5" scale="1"/>
+			</image>
+			<image path="images/IMG_1726.JPG" group="RGB" enabled="true">
+				<camera name="CanonIXUS125HS_4.3_4608x3456" id="0"/>
+				<time>2013:08:16 09:53:18</time>
+				<gps alt="804.46588134770001943" lat="46.30380509999999816" lng="7.67088750000000008"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<imageGCP x="641.8762886598" y="2988.1855670103" id="5" scale="1"/>
+			</image>
+			<image path="images/IMG_1727.JPG" group="RGB" enabled="true">
+				<camera name="CanonIXUS125HS_4.3_4608x3456" id="0"/>
+				<time>2013:08:16 09:53:24</time>
+				<gps alt="803.859375" lat="46.30323460000000324" lng="7.67103390000000029"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="images/IMG_1728.JPG" group="RGB" enabled="true">
+				<camera name="CanonIXUS125HS_4.3_4608x3456" id="0"/>
+				<time>2013:08:16 09:53:29</time>
+				<gps alt="803.03771972660001666" lat="46.30264900000000239" lng="7.67112660000000002"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="images/IMG_1729.JPG" group="RGB" enabled="true">
+				<camera name="CanonIXUS125HS_4.3_4608x3456" id="0"/>
+				<time>2013:08:16 09:53:40</time>
+				<gps alt="802.43658447270001943" lat="46.302736000000003" lng="7.67161269999999984"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="images/IMG_1730.JPG" group="RGB" enabled="true">
+				<camera name="CanonIXUS125HS_4.3_4608x3456" id="0"/>
+				<time>2013:08:16 09:53:46</time>
+				<gps alt="804.1325683594000111" lat="46.30329619999999835" lng="7.67150459999999956"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<imageGCP x="4114.7628865979" y="572.2886597938" id="6" scale="1"/>
+			</image>
+			<image path="images/IMG_1731.JPG" group="RGB" enabled="true">
+				<camera name="CanonIXUS125HS_4.3_4608x3456" id="0"/>
+				<time>2013:08:16 09:53:52</time>
+				<gps alt="805.62548828119997779" lat="46.30384910000000076" lng="7.67135540000000038"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<imageGCP x="3067.3298969072" y="1241.8144329897" id="5" scale="1"/>
+				<imageGCP x="4318.8865979381" y="2206.0206185567" id="6" scale="1"/>
+			</image>
+			<image path="images/IMG_1732.JPG" group="RGB" enabled="true">
+				<camera name="CanonIXUS125HS_4.3_4608x3456" id="0"/>
+				<time>2013:08:16 09:53:57</time>
+				<gps alt="805.87225341800001388" lat="46.30442939999999652" lng="7.67124749999999977"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<imageGCP x="3172.824742268" y="2927.9690721649" id="5" scale="1"/>
+			</image>
+			<image path="images/IMG_1733.JPG" group="RGB" enabled="true">
+				<camera name="CanonIXUS125HS_4.3_4608x3456" id="0"/>
+				<time>2013:08:16 09:54:08</time>
+				<gps alt="803.55902099610000278" lat="46.3044304000000011" lng="7.67170780000000008"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<imageGCP x="298.3917525773" y="651.0618556701" id="4" scale="1"/>
+				<imageGCP x="2126.7835051546" y="1406.2268041237" id="5" scale="1"/>
+			</image>
+			<image path="images/IMG_1734.JPG" group="RGB" enabled="true">
+				<camera name="CanonIXUS125HS_4.3_4608x3456" id="0"/>
+				<time>2013:08:16 09:54:14</time>
+				<gps alt="805.0241699219000111" lat="46.30385470000000225" lng="7.67179919999999971"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<imageGCP x="327.5257731959" y="1487.8762886598" id="3" scale="1"/>
+				<imageGCP x="354.0618556701" y="3226.2680412371" id="4" scale="1"/>
+				<imageGCP x="2299.0824742268" y="3321.6494845361" id="5" scale="1"/>
+				<imageGCP x="1143.6494845361" y="2290.6391752577" id="6" scale="1"/>
+			</image>
+			<image path="images/IMG_1735.JPG" group="RGB" enabled="true">
+				<camera name="CanonIXUS125HS_4.3_4608x3456" id="0"/>
+				<time>2013:08:16 09:54:19</time>
+				<gps alt="804.94537353520001943" lat="46.30330080000000237" lng="7.67199519999999957"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<imageGCP x="630.1855670103" y="2574.1855670103" id="3" scale="1"/>
+			</image>
+			<image path="images/IMG_1736.JPG" group="RGB" enabled="true">
+				<camera name="CanonIXUS125HS_4.3_4608x3456" id="0"/>
+				<time>2013:08:16 09:54:24</time>
+				<gps alt="805.7165527344000111" lat="46.30272560000000226" lng="7.67208670000000037"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="images/IMG_1737.JPG" group="RGB" enabled="true">
+				<camera name="CanonIXUS125HS_4.3_4608x3456" id="0"/>
+				<time>2013:08:16 09:54:36</time>
+				<gps alt="805.55987548830000833" lat="46.30284029999999973" lng="7.67257109999999987"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+			<image path="images/IMG_1738.JPG" group="RGB" enabled="true">
+				<camera name="CanonIXUS125HS_4.3_4608x3456" id="0"/>
+				<time>2013:08:16 09:54:42</time>
+				<gps alt="805.49365234380002221" lat="46.30342189999999647" lng="7.67242319999999989"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<imageGCP x="3155.0103092784" y="1646.9072164948" id="3" scale="1"/>
+				<imageGCP x="3063.4329896907" y="90" id="4" scale="1"/>
+				<imageGCP x="2282.4742268041" y="740.412371134" id="6" scale="1"/>
+				<imageGCP x="4045.5463917526" y="1072.0206185567" id="7" scale="1"/>
+			</image>
+			<image path="images/IMG_1739.JPG" group="RGB" enabled="true">
+				<camera name="CanonIXUS125HS_4.3_4608x3456" id="0"/>
+				<time>2013:08:16 09:54:47</time>
+				<gps alt="803.35998535160001666" lat="46.30399200000000093" lng="7.6723157000000004"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<imageGCP x="2965.9175257732" y="3056.6597938144" id="3" scale="1"/>
+				<imageGCP x="2562.1237113402" y="1385.8144329897" id="4" scale="1"/>
+				<imageGCP x="669.8041237113" y="1535.1958762887" id="5" scale="1"/>
+				<imageGCP x="1912.2680412371" y="2388.2474226804" id="6" scale="1"/>
+				<imageGCP x="3717.8350515464" y="2333.3195876289" id="7" scale="1"/>
+				<imageGCP x="4410.1855670103" y="1446.3092783505" id="8" scale="1"/>
+			</image>
+			<image path="images/IMG_1740.JPG" group="RGB" enabled="true">
+				<camera name="CanonIXUS125HS_4.3_4608x3456" id="0"/>
+				<time>2013:08:16 09:54:52</time>
+				<gps alt="803.82727050779999445" lat="46.30453299999999928" lng="7.67214880000000043"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<imageGCP x="3208.0824742268" y="2854.8556701031" id="4" scale="1"/>
+				<imageGCP x="1289.5051546392" y="2874.618556701" id="5" scale="1"/>
+			</image>
+			<image path="images/IMG_1741.JPG" group="RGB" enabled="true">
+				<camera name="CanonIXUS125HS_4.3_4608x3456" id="0"/>
+				<time>2013:08:16 09:55:03</time>
+				<gps alt="803.80859375" lat="46.30454069999999689" lng="7.67264709999999983"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<imageGCP x="2119.175257732" y="1206.7422680412" id="4" scale="1"/>
+				<imageGCP x="3895.4226804124" y="1545.4948453608" id="5" scale="1"/>
+				<imageGCP x="3045.1546391753" y="378.5567010309" id="6" scale="1"/>
+				<imageGCP x="59.5670103093" y="626.2886597938" id="8" scale="1"/>
+			</image>
+			<image path="images/IMG_1742.JPG" group="RGB" enabled="true">
+				<camera name="CanonIXUS125HS_4.3_4608x3456" id="0"/>
+				<time>2013:08:16 09:55:09</time>
+				<gps alt="805.34704589839998334" lat="46.30397740000000084" lng="7.67274820000000002"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<imageGCP x="2163.3402061856" y="1499.1958762887" id="3" scale="1"/>
+				<imageGCP x="2078.7216494845" y="3255.7731958763" id="4" scale="1"/>
+				<imageGCP x="3044.2268041237" y="2406.4329896907" id="6" scale="1"/>
+				<imageGCP x="1234.1134020619" y="1949.6597938144" id="7" scale="1"/>
+			</image>
+			<image path="images/IMG_1743.JPG" group="RGB" enabled="true">
+				<camera name="CanonIXUS125HS_4.3_4608x3456" id="0"/>
+				<time>2013:08:16 09:55:15</time>
+				<gps alt="803.82067871089998334" lat="46.30343359999999819" lng="7.67289330000000014"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<imageGCP x="662.8453608247" y="951.587628866" id="2" scale="1"/>
+				<imageGCP x="2282.4742268041" y="2743.9793814433" id="3" scale="1"/>
+				<imageGCP x="1331.1500413836" y="3360.2163643447" id="7" scale="1"/>
+			</image>
+			<image path="images/IMG_1744.JPG" group="RGB" enabled="true">
+				<camera name="CanonIXUS125HS_4.3_4608x3456" id="0"/>
+				<time>2013:08:16 09:55:21</time>
+				<gps alt="804.09552001949998612" lat="46.30286720000000145" lng="7.67303970000000035"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<imageGCP x="521.7216494845" y="2353.7319587629" id="2" scale="1"/>
+			</image>
+			<image path="images/IMG_1745.JPG" group="RGB" enabled="true">
+				<camera name="CanonIXUS125HS_4.3_4608x3456" id="0"/>
+				<time>2013:08:16 09:55:32</time>
+				<gps alt="804.81872558589998334" lat="46.30296040000000346" lng="7.67349179999999986"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<imageGCP x="3131.8144329897" y="1220.8453608247" id="2" scale="1"/>
+			</image>
+			<image path="images/IMG_1746.JPG" group="RGB" enabled="true">
+				<camera name="CanonIXUS125HS_4.3_4608x3456" id="0"/>
+				<time>2013:08:16 09:55:37</time>
+				<gps alt="803.27191162110000278" lat="46.30353819999999843" lng="7.67339479999999963"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<imageGCP x="3133.9484536083" y="3182.8453608247" id="2" scale="1"/>
+				<imageGCP x="1120.0824742268" y="1655.6288659794" id="3" scale="1"/>
+				<imageGCP x="893.1340206186" y="44.3505154639" id="4" scale="1"/>
+				<imageGCP x="1872.7422680412" y="939.618556701" id="7" scale="1"/>
+			</image>
+			<image path="images/IMG_1747.JPG" group="RGB" enabled="true">
+				<camera name="CanonIXUS125HS_4.3_4608x3456" id="0"/>
+				<time>2013:08:16 09:55:42</time>
+				<gps alt="802.7150878905999889" lat="46.30411469999999952" lng="7.67325999999999997"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<imageGCP x="1185.7731958763" y="1798.4226804124" id="4" scale="1"/>
+				<imageGCP x="403.793814433" y="2886.3092783505" id="6" scale="1"/>
+				<imageGCP x="2308.0824742268" y="2782.7628865979" id="7" scale="1"/>
+				<imageGCP x="3262.7319587629" y="1726.9793814433" id="8" scale="1"/>
+			</image>
+			<image path="images/IMG_1749.JPG" group="RGB" enabled="true">
+				<camera name="CanonIXUS125HS_4.3_4608x3456" id="0"/>
+				<time>2013:08:16 09:55:58</time>
+				<gps alt="804.68371582029999445" lat="46.30465339999999941" lng="7.67362799999999989"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<imageGCP x="4037.381443299" y="1702.5773195876" id="4" scale="1"/>
+				<imageGCP x="3554.5739093964" y="337.4814831837" id="7" scale="1"/>
+				<imageGCP x="2241.0927835051" y="803.1340206186" id="8" scale="1"/>
+			</image>
+			<image path="images/IMG_1750.JPG" group="RGB" enabled="true">
+				<camera name="CanonIXUS125HS_4.3_4608x3456" id="0"/>
+				<time>2013:08:16 09:56:04</time>
+				<gps alt="804.9758300780999889" lat="46.30408390000000196" lng="7.67370470000000005"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<imageGCP x="4079.1340206186" y="1368.7422680412" id="3" scale="1"/>
+				<imageGCP x="4199.9381443299" y="3116.9690721649" id="4" scale="1"/>
+				<imageGCP x="3332.9690721649" y="1864.9484536083" id="7" scale="1"/>
+				<imageGCP x="2099.5051546392" y="2613.5257731959" id="8" scale="1"/>
+			</image>
+			<image path="images/IMG_1751.JPG" group="RGB" enabled="true">
+				<camera name="CanonIXUS125HS_4.3_4608x3456" id="0"/>
+				<time>2013:08:16 09:56:10</time>
+				<gps alt="803.42315673830000833" lat="46.30351720000000171" lng="7.67387119999999978"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<imageGCP x="300.618556701" y="1404.7422680412" id="1" scale="1"/>
+				<imageGCP x="2625.587628866" y="1089.4639175258" id="2" scale="1"/>
+			</image>
+			<image path="images/IMG_1752.JPG" group="RGB" enabled="true">
+				<camera name="CanonIXUS125HS_4.3_4608x3456" id="0"/>
+				<time>2013:08:16 09:56:15</time>
+				<gps alt="803.60888671880002221" lat="46.30296839999999747" lng="7.67398139999999973"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<imageGCP x="1794.0618556701" y="2365.793814433" id="2" scale="1"/>
+			</image>
+			<image path="images/IMG_1753.JPG" group="RGB" enabled="true">
+				<camera name="CanonIXUS125HS_4.3_4608x3456" id="0"/>
+				<time>2013:08:16 09:56:28</time>
+				<gps alt="801.4509277344000111" lat="46.30303419999999903" lng="7.67440540000000038"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<imageGCP x="3310.7010309278" y="537.9587628866" id="1" scale="1"/>
+				<imageGCP x="1541.6907216495" y="2106.5567010309" id="2" scale="1"/>
+				<imageGCP x="39.5427129313" y="352.0478512554" id="7" scale="1"/>
+			</image>
+			<image path="images/IMG_1754.JPG" group="RGB" enabled="true">
+				<camera name="CanonIXUS125HS_4.3_4608x3456" id="0"/>
+				<time>2013:08:16 09:56:33</time>
+				<gps alt="805.37469482419999167" lat="46.30358460000000065" lng="7.67433549999999975"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<imageGCP x="3525.4020618557" y="110.2268041237" id="0" scale="1"/>
+				<imageGCP x="3018.1546391753" y="2242.1134020619" id="1" scale="1"/>
+				<imageGCP x="771.6804123711" y="3328.8865979381" id="2" scale="1"/>
+			</image>
+			<image path="images/IMG_1755.JPG" group="RGB" enabled="true">
+				<camera name="CanonIXUS125HS_4.3_4608x3456" id="0"/>
+				<time>2013:08:16 09:56:39</time>
+				<gps alt="804.93347167970000555" lat="46.30414700000000039" lng="7.6742151999999999"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<imageGCP x="3732.6804123711" y="1186.1443298969" id="0" scale="1"/>
+				<imageGCP x="1187.6288659794" y="1960.3298969072" id="8" scale="1"/>
+			</image>
+			<image path="images/IMG_1756.JPG" group="RGB" enabled="true">
+				<camera name="CanonIXUS125HS_4.3_4608x3456" id="0"/>
+				<time>2013:08:16 09:56:44</time>
+				<gps alt="804.7453613280999889" lat="46.304706699999997" lng="7.67405369999999998"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<imageGCP x="4178.969072165" y="2886.1237113402" id="0" scale="1"/>
+				<imageGCP x="1442.5979381443" y="3049.4226804124" id="8" scale="1"/>
+			</image>
+			<image path="images/IMG_1757.JPG" group="RGB" enabled="true">
+				<camera name="CanonIXUS125HS_4.3_4608x3456" id="0"/>
+				<time>2013:08:16 09:56:55</time>
+				<gps alt="804.42279052729998057" lat="46.30476240000000132" lng="7.67455450000000017"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<imageGCP x="1242.1855670103" y="739.5773195876" id="0" scale="1"/>
+				<imageGCP x="3927.7113402062" y="1038.0618556701" id="8" scale="1"/>
+			</image>
+			<image path="images/IMG_1758.JPG" group="RGB" enabled="true">
+				<camera name="CanonIXUS125HS_4.3_4608x3456" id="0"/>
+				<time>2013:08:16 09:57:01</time>
+				<gps alt="804.53680419919999167" lat="46.30419940000000167" lng="7.67468030000000034"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<imageGCP x="979.9793814433" y="2636.7216494845" id="0" scale="1"/>
+				<imageGCP x="2054.3195876289" y="418.175257732" id="1" scale="1"/>
+				<imageGCP x="3783.8969072165" y="2718" id="8" scale="1"/>
+			</image>
+			<image path="images/IMG_1759.JPG" group="RGB" enabled="true">
+				<camera name="CanonIXUS125HS_4.3_4608x3456" id="0"/>
+				<time>2013:08:16 09:57:06</time>
+				<gps alt="804.39056396479998057" lat="46.30365400000000164" lng="7.67480440000000019"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<imageGCP x="1868.0103092783" y="1698.0309278351" id="1" scale="1"/>
+				<imageGCP x="4111.9793814433" y="1271.5051546392" id="2" scale="1"/>
+			</image>
+			<image path="images/IMG_1760.JPG" group="RGB" enabled="true">
+				<camera name="CanonIXUS125HS_4.3_4608x3456" id="0"/>
+				<time>2013:08:16 09:57:12</time>
+				<gps alt="804.79211425779999445" lat="46.30310959999999909" lng="7.67492899999999967"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<imageGCP x="1329.4020618557" y="3358.3917525773" id="1" scale="1"/>
+				<imageGCP x="3729.5257731959" y="3002.2886597938" id="2" scale="1"/>
+			</image>
+			<image path="images/IMG_1761.JPG" group="RGB" enabled="true">
+				<camera name="CanonIXUS125HS_4.3_4608x3456" id="0"/>
+				<time>2013:08:16 09:57:24</time>
+				<gps alt="803.47210693360000278" lat="46.30317070000000257" lng="7.67538699999999974"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<imageGCP x="1673.0721649485" y="970.1443298969" id="1" scale="1"/>
+			</image>
+			<image path="images/IMG_1762.JPG" group="RGB" enabled="true">
+				<camera name="CanonIXUS125HS_4.3_4608x3456" id="0"/>
+				<time>2013:08:16 09:57:29</time>
+				<gps alt="804.92889404300001388" lat="46.30373099999999909" lng="7.67530930000000033"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<imageGCP x="2210.9381443299" y="263.8762886598" id="0" scale="1"/>
+				<imageGCP x="1616.2886597938" y="2563.0515463917" id="1" scale="1"/>
+			</image>
+			<image path="images/IMG_1763.JPG" group="RGB" enabled="true">
+				<camera name="CanonIXUS125HS_4.3_4608x3456" id="0"/>
+				<time>2013:08:16 09:57:35</time>
+				<gps alt="804.28259277339998334" lat="46.30429259999999658" lng="7.67516469999999984"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<imageGCP x="2194.793814433" y="1539" id="0" scale="1"/>
+			</image>
+			<image path="images/IMG_1764.JPG" group="RGB" enabled="true">
+				<camera name="CanonIXUS125HS_4.3_4608x3456" id="0"/>
+				<time>2013:08:16 09:57:40</time>
+				<gps alt="805.36676025389999722" lat="46.3048396000000011" lng="7.67504100000000022"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<imageGCP x="2570.2886597938" y="3150.7422680412" id="0" scale="1"/>
+			</image>
+			<image path="images/IMG_1765.JPG" group="RGB" enabled="true">
+				<camera name="CanonIXUS125HS_4.3_4608x3456" id="0"/>
+				<time>2013:08:16 09:57:53</time>
+				<gps alt="804.46917724610000278" lat="46.30484119999999848" lng="7.67542230000000014"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<imageGCP x="2721.0618556701" y="1362.8041237113" id="0" scale="1"/>
+			</image>
+			<image path="images/IMG_1766.JPG" group="RGB" enabled="true">
+				<camera name="CanonIXUS125HS_4.3_4608x3456" id="0"/>
+				<time>2013:08:16 09:57:58</time>
+				<gps alt="805.11444091800001388" lat="46.30429780000000051" lng="7.67562049999999996"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<imageGCP x="2944.206185567" y="2752.793814433" id="0" scale="1"/>
+				<imageGCP x="3662.8144329897" y="493.6082474227" id="1" scale="1"/>
+			</image>
+			<image path="images/IMG_1767.JPG" group="RGB" enabled="true">
+				<camera name="CanonIXUS125HS_4.3_4608x3456" id="0"/>
+				<time>2013:08:16 09:58:04</time>
+				<gps alt="804.35888671880002221" lat="46.30375709999999856" lng="7.67575070000000004"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<imageGCP x="3645.7886597938" y="1986.3092783505" id="1" scale="1"/>
+			</image>
+			<image path="images/IMG_1768.JPG" group="RGB" enabled="true">
+				<camera name="CanonIXUS125HS_4.3_4608x3456" id="0"/>
+				<time>2013:08:16 09:58:09</time>
+				<gps alt="804.49914550779999445" lat="46.30320460000000082" lng="7.67586079999999971"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+			</image>
+		</images>
+		<processingArea>
+			<geoCoord2D x="2617827.77179229" y="1128146.404565032"/>
+			<geoCoord2D x="2618269.758981546" y="1128224.345383787"/>
+			<geoCoord2D x="2618329.976522296" y="1127991.352488976"/>
+			<geoCoord2D x="2617871.460307378" y="1127906.763919723"/>
+		</processingArea>
+		<indexRegions/>
+		<indexClasses/>
+		<objects>
+			<object name="Clipping Box" type="CLIPPING_BOX" centerX="2618085" centerY="1128086" centerZ="622" sizeX="5" sizeY="5" sizeZ="5" rotationZ="0" fresh="true"/>
+			<object name="Unclassified" type="POINT_GROUP" groupId="0" classificationId="0" locked="false"/>
+			<object name="Deleted" type="POINT_GROUP" groupId="1" classificationId="0" locked="false"/>
+		</objects>
+	</inputs>
+</pix4dmapper>

@@ -1,0 +1,664 @@
+<?xml version="1.0"?>
+<pix4dmapper>
+	<software>
+		<projectVersion>3.0.17</projectVersion>
+		<p4dVersion>9</p4dVersion>
+		<cameraModelVersion>19</cameraModelVersion>
+	</software>
+	<options>
+		<initial>
+			<runStep>true</runStep>
+			<!--    General    -->
+			<!--Keypoints Image Scale-->
+			<keypointsImageScale>Full</keypointsImageScale>
+			<imageScale>1</imageScale>
+			<!--Quality report-->
+			<generateOrthoInReport>true</generateOrthoInReport>
+			<!--    Matching    -->
+			<!--Matching Image Pairs-->
+			<matchStrategy>AutoAerial</matchStrategy>
+			<matchTimeNbNeighbours>2</matchTimeNbNeighbours>
+			<matchUseTriangulation>true</matchUseTriangulation>
+			<matchRelativeDistanceImages>0</matchRelativeDistanceImages>
+			<matchMtpMaxImagePair>5</matchMtpMaxImagePair>
+			<matchImageSimilarityMaxPairs>1</matchImageSimilarityMaxPairs>
+			<matchTimeMultiCamera>0</matchTimeMultiCamera>
+			<!--Matching Strategy-->
+			<geometricallyVerifiedMatching>false</geometricallyVerifiedMatching>
+			<!--    Calibration    -->
+			<!--Targeted number of keypoints-->
+			<keypointSelectionMethod>Automatic</keypointSelectionMethod>
+			<numberOfKeypoints>10000</numberOfKeypoints>
+			<!--Method-->
+			<calibrationMethod>Standard</calibrationMethod>
+			<!--Optimizer-->
+			<optimizerType>Classic</optimizerType>
+			<!--Camera optimization-->
+			<internalParamOptimization>All</internalParamOptimization>
+			<externalParamOptimization>All</externalParamOptimization>
+			<!--Rematch-->
+			<rematchStrategy>Auto</rematchStrategy>
+			<rematch>true</rematch>
+			<rematchOverlap>0.3000000119</rematchOverlap>
+			<!--SkySegmentation-->
+			<automaticSkyMasking>true</automaticSkyMasking>
+			<!--Export-->
+			<exportCameraParamsAATBBA>true</exportCameraParamsAATBBA>
+			<exportUndistortedImages>false</exportUndistortedImages>
+			<!--    Miscellaneous options    -->
+			<matchAll>false</matchAll>
+			<targetCameraDist>0</targetCameraDist>
+			<descriptorType>0</descriptorType>
+			<minImageDist>5.0083230516</minImageDist>
+			<rigMatch>true</rigMatch>
+			<saveKMLReport>false</saveKMLReport>
+			<createThumbnails>true</createThumbnails>
+			<threshAdd>20</threshAdd>
+			<threshHom>10</threshHom>
+		</initial>
+		<dense>
+			<runStep>true</runStep>
+			<!--    Point Cloud    -->
+			<!--Densification-->
+			<pclImageDownscaleFactor>1</pclImageDownscaleFactor>
+			<pclImageMultiscale>true</pclImageMultiscale>
+			<pclDensity>Optimal</pclDensity>
+			<pclMinNoMatches>3</pclMinNoMatches>
+			<!--Export-->
+			<pclExportLAS>true</pclExportLAS>
+			<pclExportLAZ>false</pclExportLAZ>
+			<pclExportPLY>false</pclExportPLY>
+			<pclExportXYZ>false</pclExportXYZ>
+			<pclExportXYZDelim>Space</pclExportXYZDelim>
+			<pclExportMergeTiles>false</pclExportMergeTiles>
+			<!--    3D Textured Mesh    -->
+			<!--Generation-->
+			<meshGenerate3dTexturedMesh>true</meshGenerate3dTexturedMesh>
+			<!--Settings-->
+			<meshResolution>Medium</meshResolution>
+			<meshMaxOctreeDepth>12</meshMaxOctreeDepth>
+			<meshTextureSize>8192</meshTextureSize>
+			<meshDecimationCriteria>Quantitative</meshDecimationCriteria>
+			<meshMaxTriangles>1000000</meshMaxTriangles>
+			<meshDecimationStrategy>Sensitive</meshDecimationStrategy>
+			<meshTextureColorBalancing>false</meshTextureColorBalancing>
+			<!--Export-->
+			<meshExportPLY>false</meshExportPLY>
+			<meshExportFBX>true</meshExportFBX>
+			<meshExportDXF>false</meshExportDXF>
+			<meshExportOSGB>false</meshExportOSGB>
+			<meshExportOBJ>true</meshExportOBJ>
+			<meshExportTiledOBJ>false</meshExportTiledOBJ>
+			<meshExportPDF3D>false</meshExportPDF3D>
+			<meshExportPDF3DLogoPath></meshExportPDF3DLogoPath>
+			<!--    Advanced    -->
+			<!--Densification-->
+			<pclWindowSize>7</pclWindowSize>
+			<!--Image groups-->
+			<pclImageGroups>
+				<group name=""/>
+			</pclImageGroups>
+			<meshGeometryImageGroups>
+				<group name=""/>
+			</meshGeometryImageGroups>
+			<meshTextureImageGroups>
+				<group name=""/>
+			</meshTextureImageGroups>
+			<!--Point cloud Filters-->
+			<pclUseProcessingArea>true</pclUseProcessingArea>
+			<pclUseAnnotations>true</pclUseAnnotations>
+			<pclLimitDepthAutomatically>false</pclLimitDepthAutomatically>
+			<!--Point cloud classification-->
+			<pclTerrainClassf>false</pclTerrainClassf>
+			<pclTerrainClassfMinLength>0.1</pclTerrainClassfMinLength>
+			<pclTerrainClassfMaxLength>400</pclTerrainClassfMaxLength>
+			<pclTerrainClassfMinHeight>0.1</pclTerrainClassfMinHeight>
+			<!--Mesh generation-->
+			<meshSampleDensityDivider>1</meshSampleDensityDivider>
+			<!--    ADD-ON options   -->
+			<addOnUseSGM>false</addOnUseSGM>
+			<addOnSGMOptimizeForDSM>true</addOnSGMOptimizeForDSM>
+			<addOnSGMOverlapForward>-1</addOnSGMOverlapForward>
+			<addOnSGMOverlapSideward>-1</addOnSGMOverlapSideward>
+		</dense>
+		<ortho>
+			<runStep>true</runStep>
+			<!--    DSM and Orthomosaic   -->
+			<!--Resolution-->
+			<orthoResolution>-1</orthoResolution>
+			<!--DSM Filters-->
+			<dsmFilterUseNoiseFilter>true</dsmFilterUseNoiseFilter>
+			<dsmFilterUseSmoothing>true</dsmFilterUseSmoothing>
+			<dsmFilterSmoothingType>Sharp</dsmFilterSmoothingType>
+			<!--Raster DSM-->
+			<dsmTIFF>true</dsmTIFF>
+			<dsmMethod>InverseDistanceWeighting</dsmMethod>
+			<dsmTIFFMergeTiles>true</dsmTIFFMergeTiles>
+			<!--Orthomosaic-->
+			<mosaicTIFF>true</mosaicTIFF>
+			<mosaicTIFFMergeTiles>true</mosaicTIFFMergeTiles>
+			<mosaicTIFFNoTransparency>false</mosaicTIFFNoTransparency>
+			<mosaicKML>false</mosaicKML>
+			<!--    Additional outputs    -->
+			<!--Grid DSM-->
+			<gridDsmXYZ>false</gridDsmXYZ>
+			<gridDsmXYZDelim>Space</gridDsmXYZDelim>
+			<gridDsmLAS>false</gridDsmLAS>
+			<gridDsmLAZ>false</gridDsmLAZ>
+			<gridDsmGridSpacing>100</gridDsmGridSpacing>
+			<!--Contour lines-->
+			<contourSHP>false</contourSHP>
+			<contourPDF>false</contourPDF>
+			<contourDXF>false</contourDXF>
+			<contourBase>0</contourBase>
+			<contourElevationInterval>10</contourElevationInterval>
+			<contourResolution>100</contourResolution>
+			<contourMinLineSize>20</contourMinLineSize>
+			<!--    Miscellaneous options    -->
+			<meanResolution>2.56412233</meanResolution>
+			<mosaicVisib>true</mosaicVisib>
+			<mosaicGainc>true</mosaicGainc>
+			<dsmPNG>false</dsmPNG>
+		</ortho>
+		<index>
+			<!--Resolution-->
+			<indexResolution>-1</indexResolution>
+			<indexDownsamplingMethod>Gauss</indexDownsamplingMethod>
+			<!--Reflectance Map-->
+			<indexReflectance>false</indexReflectance>
+			<indexReflectanceMergeTiles>false</indexReflectanceMergeTiles>
+			<indices>
+				<index name="red" formula="red" enabled="false"/>
+				<index name="green" formula="green" enabled="false"/>
+				<index name="blue" formula="blue" enabled="false"/>
+				<index name="grayscale" formula="0.2126 * red + 0.7152 * green + 0.0722 * blue" enabled="false"/>
+			</indices>
+			<!--Export-->
+			<indexExportPointSHP>false</indexExportPointSHP>
+			<indexExportPointSHPGridSize>200</indexExportPointSHPGridSize>
+			<indexExportPolygonSHP>false</indexExportPolygonSHP>
+			<indexExportPolygonSHPGridSize>400</indexExportPolygonSHPGridSize>
+		</index>
+	</options>
+	<inputs>
+		<cameras>
+			<camera name="FC300X_3.6_4000x3000">
+				<imageWidth>4000</imageWidth>
+				<imageHeight>3000</imageHeight>
+				<pixelSize>1.57937</pixelSize>
+				<principalPointXmm>2.96417</principalPointXmm>
+				<principalPointYmm>2.24478</principalPointYmm>
+				<lensType>perspective</lensType>
+				<focalLengthmm>3.55204</focalLengthmm>
+				<distortion>5</distortion>
+				<radialK1>-0.014393</radialK1>
+				<radialK2>0.0125235</radialK2>
+				<radialK3>-0.000022309</radialK3>
+				<tangentialT1>0.00127711</tangentialT1>
+				<tangentialT2>0.000421167</tangentialT2>
+				<cameraModelSource>internalDB</cameraModelSource>
+				<band name="Red" centralWaveLength="660" width="0" weight="0.2126"/>
+				<band name="Green" centralWaveLength="550" width="0" weight="0.7152"/>
+				<band name="Blue" centralWaveLength="470" width="0" weight="0.0722"/>
+				<serialNumber></serialNumber>
+				<fixedBands>false</fixedBands>
+				<id>0</id>
+				<radiometricNormalization>none</radiometricNormalization>
+			</camera>
+		</cameras>
+		<coordinateSystems>
+			<southingWesting>true</southingWesting>
+			<siteCalibration>
+				<wkt>PROJCS[&quot;WGS84 / UTM zone 12N (ft)&quot;,GEOGCS[&quot;WGS 84&quot;,DATUM[&quot;WGS_1984&quot;,SPHEROID[&quot;WGS 84&quot;,6378137,298.257223563,AUTHORITY[&quot;EPSG&quot;,&quot;7030&quot;]],TOWGS84[0,0,0,0,0,0,0],AUTHORITY[&quot;EPSG&quot;,&quot;6326&quot;]],PRIMEM[&quot;Greenwich&quot;,0,AUTHORITY[&quot;EPSG&quot;,&quot;8901&quot;]],UNIT[&quot;degree&quot;,0.0174532925199433,AUTHORITY[&quot;EPSG&quot;,&quot;9108&quot;]],AUTHORITY[&quot;EPSG&quot;,&quot;4326&quot;]],PROJECTION[&quot;Transverse_Mercator&quot;],PARAMETER[&quot;latitude_of_origin&quot;,0],PARAMETER[&quot;central_meridian&quot;,-111],PARAMETER[&quot;scale_factor&quot;,0.9996],PARAMETER[&quot;false_easting&quot;,1640419.947506562],PARAMETER[&quot;false_northing&quot;,0],UNIT[&quot;ft&quot;,0.3048]]</wkt>
+				<verticalDef model="egm96"/>
+				<transform transX="-1475692.7720000001" transY="-17269801.5650000013" transZ="5309.819" rotX="-0.0001749712" rotY="-0.0056694077" rotZ="-0.0058724365" scale="1.000776241"/>
+			</siteCalibration>
+			<output>
+				<WKT>LOCAL_CS[&quot;Arbitrary (ft)&quot;,LOCAL_DATUM[&quot;Arbitrary datum&quot;],UNIT[&quot;foot&quot;,0.3048,AUTHORITY[&quot;EPSG&quot;,&quot;9002&quot;]]]</WKT>
+				<verticalDef model="noConv"/>
+			</output>
+			<gcp>
+				<WKT>LOCAL_CS[&quot;Arbitrary (ft)&quot;,LOCAL_DATUM[&quot;Arbitrary datum&quot;],UNIT[&quot;foot&quot;,0.3048,AUTHORITY[&quot;EPSG&quot;,&quot;9002&quot;]]]</WKT>
+				<verticalDef model="noConv"/>
+			</gcp>
+			<image>
+				<WKT>GEOGCS[&quot;WGS 84&quot;,DATUM[&quot;WGS_1984&quot;,SPHEROID[&quot;WGS 84&quot;,6378137,298.257223563,AUTHORITY[&quot;EPSG&quot;,&quot;7030&quot;]],TOWGS84[0,0,0,0,0,0,0],AUTHORITY[&quot;EPSG&quot;,&quot;6326&quot;]],PRIMEM[&quot;Greenwich&quot;,0,AUTHORITY[&quot;EPSG&quot;,&quot;8901&quot;]],UNIT[&quot;degree&quot;,0.01745329251994328,AUTHORITY[&quot;EPSG&quot;,&quot;9122&quot;]],AUTHORITY[&quot;EPSG&quot;,&quot;4326&quot;]]</WKT>
+				<verticalDef model="egm96"/>
+			</image>
+		</coordinateSystems>
+		<gcps>
+			<GCP label="TARGET1" alt="0" lat="0" lng="0" x="10293.381" y="7818.334" z="3499.953" tiePoint3D="false" id="0" accuracyXY="0.02" accuracyZ="0.02" type="3DGCP"/>
+			<GCP label="TARGET2" alt="0" lat="0" lng="0" x="10116.222" y="7712.618" z="3496.308" tiePoint3D="false" id="1" accuracyXY="0.02" accuracyZ="0.02" type="3DGCP"/>
+			<GCP label="TARGET3" alt="0" lat="0" lng="0" x="10096.652" y="7662.658" z="3483.809" tiePoint3D="false" id="2" accuracyXY="0.02" accuracyZ="0.02" type="3DGCP"/>
+			<GCP label="TARGET4" alt="0" lat="0" lng="0" x="10105.115" y="7602.458" z="3473.236" tiePoint3D="false" id="3" accuracyXY="0.02" accuracyZ="0.02" type="3DGCP"/>
+			<GCP label="TARGET5" alt="0" lat="0" lng="0" x="10307.654" y="7597.79" z="3453.608" tiePoint3D="false" id="4" accuracyXY="0.02" accuracyZ="0.02" type="3DGCP"/>
+			<GCP label="TARGET6" alt="0" lat="0" lng="0" x="10249.656" y="7692.342" z="3466.55" tiePoint3D="false" id="5" accuracyXY="0.02" accuracyZ="0.02" type="3DGCP"/>
+			<GCP label="TARGET7" alt="0" lat="0" lng="0" x="10399.342" y="7778.276" z="3466.103" tiePoint3D="false" id="6" accuracyXY="0.02" accuracyZ="0.02" type="3DGCP"/>
+		</gcps>
+		<images>
+			<image path="images/DJI_0130.JPG" group="group1" enabled="true">
+				<camera name="FC300X_3.6_4000x3000" id="0"/>
+				<time>2016:03:06 11:35:03</time>
+				<gps alt="1305.9709472655999889" lat="47.48677716670000137" lng="-111.2189709721999975"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="11.1999998093" pitch="0" roll="-0.400000006" perpCamera="true"/>
+				<imageGCP x="583.4478" y="438.8736" id="4" scale="1"/>
+			</image>
+			<image path="images/DJI_0131.JPG" group="group1" enabled="true">
+				<camera name="FC300X_3.6_4000x3000" id="0"/>
+				<time>2016:03:06 11:35:09</time>
+				<gps alt="1305.77099609380002221" lat="47.48689980559999668" lng="-111.21897383329999798"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="8.6000003815" pitch="-0.0999984741" roll="0.6000000238" perpCamera="true"/>
+				<imageGCP x="579.3269" y="850.7326" id="4" scale="1"/>
+			</image>
+			<image path="images/DJI_0132.JPG" group="group1" enabled="true">
+				<camera name="FC300X_3.6_4000x3000" id="0"/>
+				<time>2016:03:06 11:35:18</time>
+				<gps alt="1305.9709472655999889" lat="47.48708274999999901" lng="-111.21897063890000368"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="11.6999998093" pitch="0.0999984741" roll="1.1000000238" perpCamera="true"/>
+				<imageGCP x="717.9487" y="1604.2239" id="4" scale="1"/>
+			</image>
+			<image path="images/DJI_0133.JPG" group="group1" enabled="true">
+				<camera name="FC300X_3.6_4000x3000" id="0"/>
+				<time>2016:03:06 11:35:27</time>
+				<gps alt="1305.9709472655999889" lat="47.48724849999999975" lng="-111.21897369440000602"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="9.3000001907" pitch="-0.1999969482" roll="0.8999999762" perpCamera="true"/>
+				<imageGCP x="843.9582" y="2213.2735" id="4" scale="1"/>
+			</image>
+			<image path="images/DJI_0134.JPG" group="group1" enabled="true">
+				<camera name="FC300X_3.6_4000x3000" id="0"/>
+				<time>2016:03:06 11:35:36</time>
+				<gps alt="1305.87097167970000555" lat="47.48743505560000244" lng="-111.21897561110000652"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="8.5" pitch="-0.4000015259" roll="0.8999999762" perpCamera="true"/>
+				<imageGCP x="986.6472" y="2864.4915" id="4" scale="1"/>
+				<imageGCP x="18.3964" y="2042.7116" id="5" scale="1"/>
+				<imageGCP x="1577.284" y="728.503" id="6" scale="1"/>
+			</image>
+			<image path="images/DJI_0135.JPG" group="group1" enabled="true">
+				<camera name="FC300X_3.6_4000x3000" id="0"/>
+				<time>2016:03:06 11:35:45</time>
+				<gps alt="1305.87097167970000555" lat="47.48761661110000176" lng="-111.21897261109999988"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="10" pitch="-0.0999984741" roll="0.6999999881" perpCamera="true"/>
+				<imageGCP x="24.0385" y="1300.1374" id="0" scale="1"/>
+				<imageGCP x="209.569" y="2850.7315" id="5" scale="1"/>
+				<imageGCP x="1711.5031" y="1525.5834" id="6" scale="1"/>
+			</image>
+			<image path="images/DJI_0136.JPG" group="group1" enabled="true">
+				<camera name="FC300X_3.6_4000x3000" id="0"/>
+				<time>2016:03:06 11:35:53</time>
+				<gps alt="1305.77099609380002221" lat="47.48778108329999981" lng="-111.21897541670000464"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="8.6000003815" pitch="-0.0999984741" roll="0.6999999881" perpCamera="true"/>
+				<imageGCP x="296.5888" y="2161.2866" id="0" scale="1"/>
+				<imageGCP x="1871.202" y="2246.9603" id="6" scale="1"/>
+			</image>
+			<image path="images/DJI_0137.JPG" group="group1" enabled="true">
+				<camera name="FC300X_3.6_4000x3000" id="0"/>
+				<time>2016:03:06 11:35:58</time>
+				<gps alt="1305.9709472655999889" lat="47.48788163889999936" lng="-111.21897202780000669"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="9.3999996185" pitch="0.0999984741" roll="1.3999999762" perpCamera="true"/>
+				<imageGCP x="418.2692" y="2595.3526" id="0" scale="1"/>
+				<imageGCP x="1952.2508" y="2600.2037" id="6" scale="1"/>
+			</image>
+			<image path="images/DJI_0138.JPG" group="group1" enabled="true">
+				<camera name="FC300X_3.6_4000x3000" id="0"/>
+				<time>2016:03:06 11:36:30</time>
+				<gps alt="1305.9709472655999889" lat="47.48785019440000355" lng="-111.21933327780000411"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="-173.1999969482" pitch="0.1999969482" roll="-1" perpCamera="true"/>
+				<imageGCP x="2302.63" y="525.3797" id="0" scale="1"/>
+				<imageGCP x="890.7524" y="404.206" id="6" scale="1"/>
+			</image>
+			<image path="images/DJI_0139.JPG" group="group1" enabled="true">
+				<camera name="FC300X_3.6_4000x3000" id="0"/>
+				<time>2016:03:06 11:36:38</time>
+				<gps alt="1305.67102050779999445" lat="47.48769024999999999" lng="-111.21933269439999492"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="-171.8000030518" pitch="-0.3000030518" roll="-1.7999999523" perpCamera="true"/>
+				<imageGCP x="2417.0962" y="1416.3174" id="0" scale="1"/>
+				<imageGCP x="991.5876" y="1136.0369" id="6" scale="1"/>
+			</image>
+			<image path="images/DJI_0140.JPG" group="group1" enabled="true">
+				<camera name="FC300X_3.6_4000x3000" id="0"/>
+				<time>2016:03:06 11:36:47</time>
+				<gps alt="1305.77099609380002221" lat="47.48750877780000224" lng="-111.21933344439999303"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="-171" pitch="0.1999969482" roll="-1.5" perpCamera="true"/>
+				<imageGCP x="2570.1891" y="2292.9829" id="0" scale="1"/>
+				<imageGCP x="2708.3769" y="600.5319" id="5" scale="1"/>
+				<imageGCP x="1141.1034" y="1921.8999" id="6" scale="1"/>
+			</image>
+			<image path="images/DJI_0141.JPG" group="group1" enabled="true">
+				<camera name="FC300X_3.6_4000x3000" id="0"/>
+				<time>2016:03:06 11:36:56</time>
+				<gps alt="1305.77099609380002221" lat="47.48732558329999875" lng="-111.21933072219999872"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="-170.5" pitch="-0.1999969482" roll="-2" perpCamera="true"/>
+				<imageGCP x="1969.66" y="411.0989" id="4" scale="1"/>
+				<imageGCP x="2823.3825" y="1359.3249" id="5" scale="1"/>
+				<imageGCP x="1278.9631" y="2651.8886" id="6" scale="1"/>
+			</image>
+			<image path="images/DJI_0142.JPG" group="group1" enabled="true">
+				<camera name="FC300X_3.6_4000x3000" id="0"/>
+				<time>2016:03:06 11:37:05</time>
+				<gps alt="1305.87097167970000555" lat="47.48715494439999674" lng="-111.21933202779999306"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="-171.1000061035" pitch="0.0999984741" roll="-1.8999999762" perpCamera="true"/>
+				<imageGCP x="2089.8598" y="1145.9005" id="4" scale="1"/>
+				<imageGCP x="2937.0518" y="2093.9124" id="5" scale="1"/>
+			</image>
+			<image path="images/DJI_0143.JPG" group="group1" enabled="true">
+				<camera name="FC300X_3.6_4000x3000" id="0"/>
+				<time>2016:03:06 11:37:14</time>
+				<gps alt="1305.77099609380002221" lat="47.48696575000000308" lng="-111.21933094439999934"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="-170" pitch="0.0999984741" roll="-1.2999999523" perpCamera="true"/>
+				<imageGCP x="2233.8297" y="1830.8904" id="4" scale="1"/>
+				<imageGCP x="3074.4973" y="2755.259" id="5" scale="1"/>
+			</image>
+			<image path="images/DJI_0144.JPG" group="group1" enabled="true">
+				<camera name="FC300X_3.6_4000x3000" id="0"/>
+				<time>2016:03:06 11:37:18</time>
+				<gps alt="1305.87097167970000555" lat="47.48688672219999773" lng="-111.21933088890000363"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="-171.1000061035" pitch="-0.0999984741" roll="-1.6000000238" perpCamera="true"/>
+				<imageGCP x="2267.9175" y="2130.039" id="4" scale="1"/>
+			</image>
+			<image path="images/DJI_0145.JPG" group="group1" enabled="true">
+				<camera name="FC300X_3.6_4000x3000" id="0"/>
+				<time>2016:03:06 11:37:48</time>
+				<gps alt="1306.17102050779999445" lat="47.48687802780000311" lng="-111.21968099999999424"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="8.5" pitch="0.0999984741" roll="0.8999999762" perpCamera="true"/>
+				<imageGCP x="49.8794" y="761.4166" id="3" scale="1"/>
+				<imageGCP x="2447.1458" y="476.4936" id="4" scale="1"/>
+			</image>
+			<image path="images/DJI_0146.JPG" group="group1" enabled="true">
+				<camera name="FC300X_3.6_4000x3000" id="0"/>
+				<time>2016:03:06 11:37:57</time>
+				<gps alt="1306.0710449219000111" lat="47.48705663890000039" lng="-111.21968005559999426"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="9.1000003815" pitch="0.1999969482" roll="1.1000000238" perpCamera="true"/>
+				<imageGCP x="239.6967" y="1421.2607" id="3" scale="1"/>
+				<imageGCP x="2597.9782" y="1129.902" id="4" scale="1"/>
+				<imageGCP x="1805.8007" y="92.1997" id="5" scale="1"/>
+			</image>
+			<image path="images/DJI_0147.JPG" group="group1" enabled="true">
+				<camera name="FC300X_3.6_4000x3000" id="0"/>
+				<time>2016:03:06 11:38:06</time>
+				<gps alt="1305.77099609380002221" lat="47.487242611100001" lng="-111.21968216669999663"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="9.6999998093" pitch="0" roll="1.2000000477" perpCamera="true"/>
+				<imageGCP x="16.3209" y="778.863" id="1" scale="1"/>
+				<imageGCP x="46.0116" y="1510.6905" id="2" scale="1"/>
+				<imageGCP x="404.9313" y="2189.3603" id="3" scale="1"/>
+				<imageGCP x="2716.1457" y="1805.1251" id="4" scale="1"/>
+				<imageGCP x="1933.9023" y="852.2335" id="5" scale="1"/>
+			</image>
+			<image path="images/DJI_0148.JPG" group="group1" enabled="true">
+				<camera name="FC300X_3.6_4000x3000" id="0"/>
+				<time>2016:03:06 11:38:15</time>
+				<gps alt="1305.87097167970000555" lat="47.48740738890000301" lng="-111.2196817221999936"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="9.8999996185" pitch="0.1999969482" roll="1" perpCamera="true"/>
+				<imageGCP x="255.3702" y="1699.317" id="1" scale="1"/>
+				<imageGCP x="268.0488" y="2326.8107" id="2" scale="1"/>
+				<imageGCP x="603.3659" y="2924.2863" id="3" scale="1"/>
+				<imageGCP x="2833.3737" y="2470.4334" id="4" scale="1"/>
+				<imageGCP x="2072.7255" y="1614.1047" id="5" scale="1"/>
+				<imageGCP x="3649.6827" y="308.2704" id="6" scale="1"/>
+			</image>
+			<image path="images/DJI_0149.JPG" group="group1" enabled="true">
+				<camera name="FC300X_3.6_4000x3000" id="0"/>
+				<time>2016:03:06 11:38:24</time>
+				<gps alt="1305.87097167970000555" lat="47.48759463889999921" lng="-111.21968255560000216"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="8.3000001907" pitch="0.0999984741" roll="0.8999999762" perpCamera="true"/>
+				<imageGCP x="2555.5797" y="727.0339" id="0" scale="1"/>
+				<imageGCP x="408.2541" y="2516.6827" id="1" scale="1"/>
+				<imageGCP x="2166.6867" y="2333.7831" id="5" scale="1"/>
+				<imageGCP x="3727.4357" y="1110.9371" id="6" scale="1"/>
+			</image>
+			<image path="images/DJI_0150.JPG" group="group1" enabled="true">
+				<camera name="FC300X_3.6_4000x3000" id="0"/>
+				<time>2016:03:06 11:38:33</time>
+				<gps alt="1305.9709472655999889" lat="47.48777905560000079" lng="-111.21968275000000403"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="8.6999998093" pitch="0.3000030518" roll="1.1000000238" perpCamera="true"/>
+				<imageGCP x="2722.8773" y="1694.9129" id="0" scale="1"/>
+				<imageGCP x="3868.0649" y="1886.7021" id="6" scale="1"/>
+			</image>
+			<image path="images/DJI_0151.JPG" group="group1" enabled="true">
+				<camera name="FC300X_3.6_4000x3000" id="0"/>
+				<time>2016:03:06 11:38:37</time>
+				<gps alt="1305.9709472655999889" lat="47.4878408056000012" lng="-111.21968463890000578"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="7.5" pitch="0.1999969482" roll="0.8999999762" perpCamera="true"/>
+				<imageGCP x="2749.4715" y="2045.9585" id="0" scale="1"/>
+				<imageGCP x="3865.4561" y="2203.0434" id="6" scale="1"/>
+			</image>
+			<image path="images/DJI_0152.JPG" group="group1" enabled="true">
+				<camera name="FC300X_3.6_4000x3000" id="0"/>
+				<time>2016:03:06 11:39:08</time>
+				<gps alt="1306.0710449219000111" lat="47.48782186110000225" lng="-111.22003694439999322"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="-172" pitch="0.1999969482" roll="-1" perpCamera="true"/>
+			</image>
+			<image path="images/DJI_0153.JPG" group="group1" enabled="true">
+				<camera name="FC300X_3.6_4000x3000" id="0"/>
+				<time>2016:03:06 11:39:17</time>
+				<gps alt="1305.87097167970000555" lat="47.48764083329999863" lng="-111.2200354999999945"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="-171.8999938965" pitch="0.0999984741" roll="-1" perpCamera="true"/>
+				<imageGCP x="2238.7763" y="100.9256" id="1" scale="1"/>
+				<imageGCP x="530.0374" y="296.1283" id="5" scale="1"/>
+			</image>
+			<image path="images/DJI_0154.JPG" group="group1" enabled="true">
+				<camera name="FC300X_3.6_4000x3000" id="0"/>
+				<time>2016:03:06 11:39:26</time>
+				<gps alt="1306.0710449219000111" lat="47.48748033329999885" lng="-111.22003538890000129"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="-171.3999938965" pitch="0" roll="-1.3999999762" perpCamera="true"/>
+				<imageGCP x="148.8295" y="2894.2858" id="0" scale="1"/>
+				<imageGCP x="2372.9396" y="984.4895" id="1" scale="1"/>
+				<imageGCP x="2478.2533" y="322.4764" id="2" scale="1"/>
+				<imageGCP x="667.9855" y="1062.0376" id="5" scale="1"/>
+			</image>
+			<image path="images/DJI_0155.JPG" group="group1" enabled="true">
+				<camera name="FC300X_3.6_4000x3000" id="0"/>
+				<time>2016:03:06 11:39:34</time>
+				<gps alt="1305.87097167970000555" lat="47.48729558330000344" lng="-111.22003458330000569"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="-170.8999938965" pitch="0.1999969482" roll="-1" perpCamera="true"/>
+				<imageGCP x="2518.315" y="1827.3237" id="1" scale="1"/>
+				<imageGCP x="2611.8372" y="1131.6005" id="2" scale="1"/>
+				<imageGCP x="2354.5083" y="430.8772" id="3" scale="1"/>
+				<imageGCP x="839.4488" y="1814.7924" id="5" scale="1"/>
+			</image>
+			<image path="images/DJI_0156.JPG" group="group1" enabled="true">
+				<camera name="FC300X_3.6_4000x3000" id="0"/>
+				<time>2016:03:06 11:39:43</time>
+				<gps alt="1306.0710449219000111" lat="47.48711544439999699" lng="-111.22003102780000461"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="-170.3999938965" pitch="-0.1999969482" roll="-1.6000000238" perpCamera="true"/>
+				<imageGCP x="2652.3581" y="2622.7106" id="1" scale="1"/>
+				<imageGCP x="2728.7253" y="1902.1342" id="2" scale="1"/>
+				<imageGCP x="2464.1171" y="1195.8669" id="3" scale="1"/>
+				<imageGCP x="132.0089" y="1588.9235" id="4" scale="1"/>
+				<imageGCP x="990.0269" y="2553.3861" id="5" scale="1"/>
+			</image>
+			<image path="images/DJI_0157.JPG" group="group1" enabled="true">
+				<camera name="FC300X_3.6_4000x3000" id="0"/>
+				<time>2016:03:06 11:39:52</time>
+				<gps alt="1305.87097167970000555" lat="47.48694952780000023" lng="-111.2200354999999945"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="-171.3000030518" pitch="0.0999984741" roll="-1.1000000238" perpCamera="true"/>
+				<imageGCP x="2872.8413" y="2710.0899" id="2" scale="1"/>
+				<imageGCP x="2615.8523" y="1989.1242" id="3" scale="1"/>
+				<imageGCP x="345.4449" y="2307.0787" id="4" scale="1"/>
+			</image>
+			<image path="images/DJI_0158.JPG" group="group1" enabled="true">
+				<camera name="FC300X_3.6_4000x3000" id="0"/>
+				<time>2016:03:06 11:39:55</time>
+				<gps alt="1305.87097167970000555" lat="47.48686961109999771" lng="-111.22003430559999515"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="-171.3999938965" pitch="0" roll="-1.3999999762" perpCamera="true"/>
+				<imageGCP x="2651.6631" y="2276.4245" id="3" scale="1"/>
+				<imageGCP x="377.8188" y="2560.1733" id="4" scale="1"/>
+			</image>
+			<image path="images/DJI_0159.JPG" group="group1" enabled="true">
+				<camera name="FC300X_3.6_4000x3000" id="0"/>
+				<time>2016:03:06 11:40:26</time>
+				<gps alt="1305.9709472655999889" lat="47.48686716670000152" lng="-111.22039352779999888"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="7.1999998093" pitch="0.0999984741" roll="0.6000000238" perpCamera="true"/>
+				<imageGCP x="2211.9961" y="313.8872" id="3" scale="1"/>
+			</image>
+			<image path="images/DJI_0160.JPG" group="group1" enabled="true">
+				<camera name="FC300X_3.6_4000x3000" id="0"/>
+				<time>2016:03:06 11:40:35</time>
+				<gps alt="1306.0710449219000111" lat="47.48704736109999658" lng="-111.22038936110000407"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="10.5" pitch="0.1999969482" roll="1" perpCamera="true"/>
+				<imageGCP x="2104.6843" y="283.7873" id="2" scale="1"/>
+				<imageGCP x="2329.4302" y="1056.0907" id="3" scale="1"/>
+			</image>
+			<image path="images/DJI_0161.JPG" group="group1" enabled="true">
+				<camera name="FC300X_3.6_4000x3000" id="0"/>
+				<time>2016:03:06 11:40:44</time>
+				<gps alt="1305.9709472655999889" lat="47.48722761110000334" lng="-111.22039163889999713"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="10.1999998093" pitch="0.1999969482" roll="1.1000000238" perpCamera="true"/>
+				<imageGCP x="2449.0571" y="329.5979" id="1" scale="1"/>
+				<imageGCP x="2282.8405" y="1095.2068" id="2" scale="1"/>
+				<imageGCP x="2490.7793" y="1794.1251" id="3" scale="1"/>
+				<imageGCP x="3971.8542" y="425.3416" id="5" scale="1"/>
+			</image>
+			<image path="images/DJI_0162.JPG" group="group1" enabled="true">
+				<camera name="FC300X_3.6_4000x3000" id="0"/>
+				<time>2016:03:06 11:40:53</time>
+				<gps alt="1306.0710449219000111" lat="47.48740930560000351" lng="-111.22039233329999774"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="9.8999996185" pitch="0.3000030518" roll="1" perpCamera="true"/>
+				<imageGCP x="2603.622" y="1221.714" id="1" scale="1"/>
+				<imageGCP x="2415.6285" y="1892.9969" id="2" scale="1"/>
+				<imageGCP x="2597.7547" y="2520.6845" id="3" scale="1"/>
+			</image>
+			<image path="images/DJI_0163.JPG" group="group1" enabled="true">
+				<camera name="FC300X_3.6_4000x3000" id="0"/>
+				<time>2016:03:06 11:41:02</time>
+				<gps alt="1305.87097167970000555" lat="47.48759363890000174" lng="-111.22039527779999446"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="8.1999998093" pitch="-0.1999969482" roll="1" perpCamera="true"/>
+				<imageGCP x="2736.4307" y="2088.4497" id="1" scale="1"/>
+				<imageGCP x="2526.2409" y="2666.968" id="2" scale="1"/>
+			</image>
+			<image path="images/DJI_0164.JPG" group="group1" enabled="true">
+				<camera name="FC300X_3.6_4000x3000" id="0"/>
+				<time>2016:03:06 11:41:11</time>
+				<gps alt="1305.67102050779999445" lat="47.48776066669999807" lng="-111.22039327779999951"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="9.1999998093" pitch="0" roll="1.2000000477" perpCamera="true"/>
+				<imageGCP x="2869.9356" y="2938.3593" id="1" scale="1"/>
+			</image>
+			<image path="images/DJI_0165.JPG" group="group1" enabled="true">
+				<camera name="FC300X_3.6_4000x3000" id="0"/>
+				<time>2016:03:06 11:41:13</time>
+				<gps alt="1305.77099609380002221" lat="47.48782622219999894" lng="-111.22039111109999965"/>
+				<xyz x="0" y="0" z="0"/>
+				<accuracyXY>5</accuracyXY>
+				<accuracyZ>10</accuracyZ>
+				<ori yaw="10" pitch="0" roll="1.3999999762" perpCamera="true"/>
+			</image>
+		</images>
+		<processingArea>
+			<geoCoord2D x="9974.219016689" y="7909.23216654"/>
+			<geoCoord2D x="10431.842062447" y="7939.548232306"/>
+			<geoCoord2D x="10462.354670108" y="7443.749385536"/>
+			<geoCoord2D x="9956.954881153" y="7463.413289376"/>
+		</processingArea>
+		<indexRegions/>
+		<indexClasses/>
+		<objects>
+			<object name="Clipping Box" type="CLIPPING_BOX" centerX="483452" centerY="5259348" centerZ="1306" sizeX="5" sizeY="5" sizeZ="5" rotationZ="0" fresh="true"/>
+			<object name="Unclassified" type="POINT_GROUP" groupId="0" classificationId="0" locked="false"/>
+			<object name="Deleted" type="POINT_GROUP" groupId="1" classificationId="0" locked="false"/>
+		</objects>
+	</inputs>
+</pix4dmapper>
